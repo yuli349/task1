@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+.theme_light {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,4 +54,11 @@ code {
   font-display: swap;
   font-style: normal;
   font-feature-settings: normal;
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    font-size: 2.1vh;
+    line-height: 2.4vh;
+  }
 }

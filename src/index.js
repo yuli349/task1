@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Leaders/>
+      <div className="theme_light">
+          <Leaders/>
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -10,7 +10,7 @@ export default class UserColumn extends React.Component {
                 <div className="column__user">
                     <Avatar userEmoji={this.props.emoji}/>
                     <UserName name={this.props.item.name}/>
-                    {this.props.item.valueText}
+                    <div className="column__user-value">{this.props.item.valueText}</div>
                 </div>
                 <div className="column__block">
                     {this.props.index}
