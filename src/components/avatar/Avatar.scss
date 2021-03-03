@@ -1,0 +1,26 @@
+.avatar {
+  padding: 3vw 3vw 0;
+  margin: 0 auto 1.5vh;
+  position: relative;
+}
+
+.avatar .img {
+  width: 9.6vw;
+  height: 9.6vw;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.avatar .emoji {
+  position: absolute;
+  top: 2vw;
+  font-size: 4.8vw;
+  line-height: 1.2;
+  left: 50%;
+  margin-left: -3.2vw;
+  margin-top: -3vw;
+}
