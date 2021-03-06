@@ -3,10 +3,21 @@ body {
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #BFBFBF;
   font-size: 3.7vh;
   line-height: 4vh;
   height: 100%;
+  color: #BFBFBF;
+}
+
+body,
+body.theme_dark,
+body .theme_dark {
+  background: #000;
+}
+
+body .theme_light,
+body.theme_light {
+  background: #fff;
 }
 
 .theme_dark,

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Leaders from './slides/Leaders/Leaders';
+import Vote from './slides/Vote/Vote';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Leaders/>
+      <Vote/>
   </React.StrictMode>,
   document.getElementById('root')
 );

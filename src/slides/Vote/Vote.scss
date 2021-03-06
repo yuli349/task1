@@ -1,0 +1,159 @@
+.vote,
+.theme_dark .vote {
+  height: 100%;
+
+  &__slider {
+    height: calc(100% - 20vh);
+  }
+
+  &__slider-btns {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    justify-content: space-around;
+    margin-left: -4.8vw;
+    padding: 20vh 0;
+  }
+
+  .carousel {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    button {
+      width: 9.6vw;
+      height: 9.6vw;
+      position: relative;
+      z-index: 5;
+      background-image: url("../../assets/images/button-dark.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: transparent;
+      border-color: transparent;
+      outline: none;
+
+      &:disabled {
+        background-image: url("../../assets/images/button-hover-dark.svg");
+      }
+    }
+
+    &__back-button {
+      margin-bottom: 15vh;
+      transform: rotate(180deg);
+    }
+  }
+
+  .carousel__slider {
+    height: 100%;
+  }
+
+  .carousel__slide {
+    &:nth-child(1) {
+      .vote__slide-item:nth-child(1) .avatar .img {
+        background-image: url("../../assets/images/2x/1.jpg");
+      }
+      .vote__slide-item:nth-child(2) .avatar .img {
+        background-image: url("../../assets/images/2x/4.jpg");
+      }
+      .vote__slide-item:nth-child(3) .avatar .img {
+        background-image: url("../../assets/images/2x/10.jpg");
+      }
+      .vote__slide-item:nth-child(4) .avatar .img {
+        background-image: url("../../assets/images/2x/12.jpg");
+      }
+      .vote__slide-item:nth-child(5) .avatar .img {
+        background-image: url("../../assets/images/2x/11.jpg");
+      }
+      .vote__slide-item:nth-child(6) .avatar .img {
+        background-image: url("../../assets/images/2x/2.jpg");
+      }
+    }
+    &:nth-child(2) {
+      .vote__slide-item:nth-child(1) .avatar .img {
+        background-image: url("../../assets/images/2x/5.jpg");
+      }
+      .vote__slide-item:nth-child(2) .avatar .img {
+        background-image: url("../../assets/images/2x/6.jpg");
+      }
+      .vote__slide-item:nth-child(3) .avatar .img {
+        background-image: url("../../assets/images/2x/8.jpg");
+      }
+      .vote__slide-item:nth-child(4) .avatar .img {
+        background-image: url("../../assets/images/2x/7.jpg");
+      }
+      .vote__slide-item:nth-child(5) .avatar .img {
+        background-image: url("../../assets/images/2x/3.jpg");
+      }
+      .vote__slide-item:nth-child(6) .avatar .img {
+        background-image: url("../../assets/images/2x/9.jpg");
+      }
+    }
+  }
+}
+
+.theme_light .vote {
+  .carousel {
+    button {
+      background-image: url("../../assets/images/button-hover-light.svg");
+
+      &:disabled {
+        background-image: url("../../assets/images/button-light.svg");
+      }
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .vote {
+    &__slider {
+      height: calc(100% - 22vh);
+    }
+
+    &__slider-btns {
+      bottom: 0;
+      margin-left: -8vw;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 3.2vh 0;
+    }
+
+    .carousel {
+      button {
+        width: 17vw;
+        height: 17vw;
+      }
+
+      &__back-button {
+        margin-bottom: 0;
+      }
+    }
+
+    .carousel__slide {
+      &:nth-child(1) {
+        .vote__slide-item:nth-child(7) .avatar .img {
+          background-image: url("../../assets/images/2x/5.jpg");
+        }
+        .vote__slide-item:nth-child(8) .avatar .img {
+          background-image: url("../../assets/images/2x/6.jpg");
+        }
+      }
+      &:nth-child(2) {
+        .vote__slide-item:nth-child(1) .avatar .img {
+          background-image: url("../../assets/images/2x/8.jpg");
+        }
+        .vote__slide-item:nth-child(2) .avatar .img {
+          background-image: url("../../assets/images/2x/7.jpg");
+        }
+        .vote__slide-item:nth-child(3) .avatar .img {
+          background-image: url("../../assets/images/2x/3.jpg");
+        }
+        .vote__slide-item:nth-child(4) .avatar .img {
+          background-image: url("../../assets/images/2x/9.jpg");
+        }
+      }
+    }
+  }
+}
