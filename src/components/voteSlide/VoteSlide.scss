@@ -7,8 +7,9 @@
 
   &-item {
     width: 15.6vw;
-    height: 37.9vh !important;
+    max-height: 37.9vh !important;
     cursor: pointer;
+    padding-bottom: 4vh;
 
     &:nth-child(6n+1) {
       grid-column: 1;

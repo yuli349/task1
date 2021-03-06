@@ -34,19 +34,21 @@
 
 @media only screen and (orientation: portrait) {
   .avatar {
-    padding: 5.3vw 5.3vw 0;
-    margin: 0 auto 1.6vh;
+    padding: 3vh 5.3vw 0;
+    margin: 0 auto 0.9vh;
 
     .img {
-      width: 17vw;
-      height: 17vw;
+      max-width: 17vw;
+      max-height: 17vw;
+      width: 9.6vmax;
+      height: 9.6vmax;
     }
 
     .emoji {
-      top: 3.5vw;
-      font-size: 8.5vw;
-      margin-left: -5.8vw;
-      margin-top: -5.3vw;
+      top: 0;
+      font-size: 4.8vh;
+      margin-left: -3.2vh;
+      margin-top: -1.5vh;
     }
   }
 }
