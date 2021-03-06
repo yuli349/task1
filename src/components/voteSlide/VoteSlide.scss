@@ -1,0 +1,97 @@
+.vote__slide,
+.theme_dark .vote__slide {
+  display: grid !important;
+  padding: 1vh 4.6vw !important;
+  grid-gap: 1vh 4.6vw;
+  grid-auto-columns: minmax(9.6vw, auto);
+
+  &-item {
+    width: 15.6vw;
+    height: 37.9vh !important;
+    cursor: pointer;
+
+    &:nth-child(6n+1) {
+      grid-column: 1;
+      position: relative;
+      top: 19.2vh;
+    }
+
+    &:nth-child(6n+2),
+    &:nth-child(6n+5) {
+      grid-column: 2;
+    }
+
+    &:nth-child(6n+3),
+    &:nth-child(6n+6) {
+      grid-column: 4;
+    }
+
+    &:nth-child(6n+4) {
+      grid-column: 5;
+      position: relative;
+      top: 19.2vh;
+    }
+  }
+
+  &-item:hover {
+    background: radial-gradient(85.62% 148.33% at 49.85% 100%, rgba(68, 58, 42, 0.7864) 0%, rgba(0, 0, 0, 0.8) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(255, 255, 255, 0.1);
+    border-radius: 1vh;
+  }
+  &-selected,
+  &-selected:hover {
+    background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4);
+    border-radius: 1vh;
+  }
+}
+
+.theme_light .vote__slide {
+  &-item:hover {
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
+  }
+  &-selected,
+  &-selected:hover {
+    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .vote__slide {
+    display: grid !important;
+    padding: 3.2vh 6.4vw !important;
+    grid-gap: 3.2vh 2vw;
+    grid-auto-columns: minmax(27.7vw, auto);
+    grid-auto-rows: minmax(auto, 21.2vh);
+    height: 100%;
+
+    &-item {
+      width: 27.7vw;
+      height: 21.2vh !important;
+      cursor: pointer;
+
+      &:nth-child(8n+1),
+      &:nth-child(8n+4),
+      &:nth-child(8n+7) {
+        grid-column: 1;
+        top: 0;
+      }
+
+      &:nth-child(8n+2),
+      &:nth-child(8n+5) {
+        grid-column: 2;
+        position: relative;
+        top: 13vh;
+      }
+
+      &:nth-child(8n+3),
+      &:nth-child(8n+6),
+      &:nth-child(8n) {
+        grid-column: 3;
+        top: 0;
+      }
+    }
+  }
+}

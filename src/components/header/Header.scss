@@ -1,0 +1,50 @@
+.header,
+.theme_dark .header {
+  padding: 5vh 3vw 0;
+
+  &__title {
+    font-weight: 700;
+    color: #FCFBF7;
+    text-align: center;
+    font-size: 8vh;
+    line-height: 8.5vh;
+    margin-bottom: 2vh;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    color: #918F8A;
+    font-size: 4vh;
+    line-height: 4.5vh;
+    text-align: center;
+  }
+}
+
+.theme_light .header {
+  &__title {
+    color: #261C00;
+  }
+
+  &__subtitle {
+    color: #BFBFBF;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .header {
+    padding: 3vh 6.4vw 0;
+
+    &__title {
+      text-align: left;
+      font-size: 4.5vh;
+      line-height: 4.8vh;
+      margin-bottom: 1.2vh;
+    }
+
+    &__subtitle {
+      text-align: left;
+      font-size: 2.4vh;
+      line-height: 2.7vh;
+    }
+  }
+}
