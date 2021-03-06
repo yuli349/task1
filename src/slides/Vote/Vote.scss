@@ -34,6 +34,8 @@
       border-color: transparent;
       outline: none;
 
+      &:hover,
+      &:active,
       &:disabled {
         background-image: url("../../assets/images/button-hover-dark.svg");
       }
@@ -113,16 +115,19 @@
 
     &__slider-btns {
       top: 0;
-      margin-left: -8vw;
+      margin-left: -4.7vh;
       height: 100%;
       display: flex;
       justify-content: space-between;
+      padding: 3.2vh 0;
     }
 
     .carousel {
       button {
-        width: 17vw;
-        height: 17vw;
+        max-width: 17vw;
+        max-height: 17vw;
+        width: 9.6vmax;
+        height: 9.6vmax;
       }
 
       &__back-button {
