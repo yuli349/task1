@@ -8,13 +8,13 @@
 
   &__slider-btns {
     position: absolute;
-    bottom: 0;
+    top: 13vh;
     display: flex;
     flex-direction: column;
     left: 50%;
     justify-content: space-around;
     margin-left: -4.8vw;
-    padding: 20vh 0;
+    padding: 0;
   }
 
   .carousel {
@@ -112,12 +112,11 @@
     }
 
     &__slider-btns {
-      bottom: 0;
+      top: 0;
       margin-left: -8vw;
       height: 100%;
       display: flex;
       justify-content: space-between;
-      padding: 3.2vh 0;
     }
 
     .carousel {
