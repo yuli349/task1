@@ -33,7 +33,9 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .avatar {
+  .avatar,
+  .theme_dark .avatar,
+  .theme_light .avatar {
     padding: 3vh 5.3vw 0;
     margin: 0 auto 0.9vh;
 

@@ -12,7 +12,7 @@ body {
 body,
 body.theme_dark,
 body .theme_dark {
-  background: #000;
+  background: radial-gradient(circle at 50% 50%, #130E00 0%, #000000 100%);
 }
 
 body .theme_light,
