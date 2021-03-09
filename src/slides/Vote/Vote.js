@@ -3,7 +3,6 @@ import React from 'react';
 import './Vote.scss';
 import VoteSlide from '../../components/voteSlide/VoteSlide';
 import Header from '../../components/header/Header';
-import API from '../../data/data.json';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -29,12 +28,13 @@ export default class Vote extends React.Component {
         window.screen.orientation.onchange = this.setChunks.bind(this);
     }
     render() {
-        const users = [...API[2].data.users];
+        const { data } = this.props;
+        const users = [...data.users];
         const splitArr = new Array(Math.ceil(users.length / this.state.chunks))
             .fill(null).map(_ => users.splice(0, this.state.chunks));
         return (
             <div className="vote">
-                <Header title={API[2].data.title} subtitle={API[2].data.subtitle}/>
+                <Header title={data.title} subtitle={data.subtitle}/>
 
                 <div className="vote__slider">
                     <CarouselProvider
@@ -49,7 +49,7 @@ export default class Vote extends React.Component {
                                 return (
                                     <Slide index={index}>
                                         <VoteSlide
-                                            selectedUser={API[2].data.selectedUserId}
+                                            selectedUser={data.selectedUserId}
                                             key={index}
                                             items={arr}/>
                                     </Slide>
