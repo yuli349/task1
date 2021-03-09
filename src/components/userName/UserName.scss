@@ -15,7 +15,9 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .name {
+  .name,
+  .theme_light .name,
+  .theme_dark .name  {
     font-size: 2.4vh;
     line-height: 2.7vh;
     margin-bottom: 1vh;

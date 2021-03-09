@@ -104,7 +104,9 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .column {
+  .column,
+  .theme_dark .column,
+  .theme_light .column {
     width: 32vw;
 
     &:nth-child(2),

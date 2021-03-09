@@ -31,7 +31,9 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .header {
+  .header,
+  .theme_dark .header,
+  .theme_light .header {
     padding: 3vh 6.4vw 0;
 
     &__title {
