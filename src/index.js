@@ -26,10 +26,15 @@ function renderSlide(slide) {
 }
 
 ReactDOM.render(
-  <React.StrictMode>
-      <Vote/>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+       {/* <div className="theme_light">
+            <Chart/>
+        </div>*/}
+        <div className={`theme_${theme}`}>
+            {renderSlide(slide)}
+        </div>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

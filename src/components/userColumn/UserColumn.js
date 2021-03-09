@@ -8,7 +8,7 @@ export default class UserColumn extends React.Component {
         return (
             <div className="column">
                 <div className="column__user">
-                    <Avatar userEmoji={this.props.emoji}/>
+                    <Avatar avatar={this.props.item.avatar} userEmoji={this.props.emoji}/>
                     <UserName name={this.props.item.name}/>
                     <div className="column__user-value">{this.props.item.valueText}</div>
                 </div>

@@ -67,27 +67,6 @@
     background: radial-gradient(91.67% 122.17% at 50% -11.17%, #FFA300 0%, #2D1C00 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4);
   }
-
-  &:nth-child(1) &__user .avatar .img {
-    background-image: url("../../assets/images/1x/8.jpg");
-  }
-
-  &:nth-child(2) &__user .avatar .img {
-    background-image: url("../../assets/images/1x/7.jpg");
-  }
-
-  &:nth-child(3) &__user .avatar .img {
-    background-image: url("../../assets/images/1x/3.jpg");
-  }
-
-  &:nth-child(4) &__user .avatar .img {
-    background-image: url("../../assets/images/1x/9.jpg");
-  }
-
-  &:nth-child(5) &__user .avatar .img {
-    background-image: url("../../assets/images/1x/6.jpg");
-  }
-
 }
 
 .theme_light .column {
