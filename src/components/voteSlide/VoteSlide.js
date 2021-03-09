@@ -12,7 +12,7 @@ export default class VoteSlide extends React.Component {
                         <div key={item.id}
                              className={`vote__slide-item ${item.id === this.props.selectedUser ? 'vote__slide-selected' : ''}`
                              }>
-                            <Avatar userEmoji={item.id === this.props.selectedUser ? '👍' : ''}/>
+                            <Avatar avatar={item.avatar} userEmoji={item.id === this.props.selectedUser ? '👍' : ''}/>
                             <UserName name={item.name}/>
                         </div>
                     );
