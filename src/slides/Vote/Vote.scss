@@ -108,7 +108,9 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .vote {
+  .vote,
+  .theme_dark .vote,
+  .theme_light .vote {
     &__slider {
       height: calc(100% - 22vh);
     }

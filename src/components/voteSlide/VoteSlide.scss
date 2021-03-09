@@ -10,6 +10,7 @@
     max-height: 37.9vh !important;
     cursor: pointer;
     padding-bottom: 4vh;
+    border-radius: 1.6vh;
 
     &:nth-child(6n+1) {
       grid-column: 1;
@@ -37,13 +38,11 @@
   &-item:hover {
     background: radial-gradient(85.62% 148.33% at 49.85% 100%, rgba(68, 58, 42, 0.7864) 0%, rgba(0, 0, 0, 0.8) 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(255, 255, 255, 0.1);
-    border-radius: 1vh;
   }
   &-selected,
   &-selected:hover {
     background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4);
-    border-radius: 1vh;
   }
 }
 
@@ -60,7 +59,9 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .vote__slide {
+  .vote__slide,
+  .theme_dark .vote__slide,
+  .theme_light .vote__slide {
     display: grid !important;
     padding: 3.2vh 6.4vw !important;
     grid-gap: 3.2vh 2vw;
