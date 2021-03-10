@@ -4,6 +4,7 @@ import './index.css';
 import Leaders from './slides/Leaders/Leaders';
 import Vote from './slides/Vote/Vote';
 import Chart from './slides/Chart/Chart';
+import Activity from './slides/Activity/Activity';
 import data from './data/data.json';
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -19,6 +20,8 @@ function renderSlide(slide) {
             return <Vote data={slide.data} />;
         case 'chart':
             return <Chart data={slide.data} />;
+        case 'activity':
+            return <Activity data={slide.data} />;
 
         default:
             return <div>unknown alias</div>;
@@ -27,9 +30,6 @@ function renderSlide(slide) {
 
 ReactDOM.render(
     <React.StrictMode>
-       {/* <div className="theme_light">
-            <Chart/>
-        </div>*/}
         <div className={`theme_${theme}`}>
             {renderSlide(slide)}
         </div>
