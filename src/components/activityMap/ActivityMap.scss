@@ -1,0 +1,126 @@
+.activity,
+.theme_dark .activity {
+  &__map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vw;
+    margin-left: -5vw;
+  }
+
+  &__day {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -3.2vw;
+
+    &:nth-child(2n) {
+      margin-left: 5vw;
+    }
+  }
+
+  &__item {
+    width: 5.1vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.size_min {
+      background-image: url("../../assets/images/4x/min-dark.png");
+      height: 5.1vw;
+    }
+
+    &.size_mid {
+      background-image: url("../../assets/images/4x/mid-dark.png");
+      height: 6.3vw;
+      margin-top: -1.2vw;
+    }
+
+    &.size_max {
+      background-image: url("../../assets/images/4x/max-dark.png");
+      height: 8.7vw;
+      margin-top: -3.6vw;
+    }
+
+    &.size_extra {
+      background-image: url("../../assets/images/4x/extra-dark.png");
+      height: 11.1vw;
+      margin-top: -6vw;
+    }
+  }
+}
+
+.theme_light .activity {
+  &__item {
+    &.size_min {
+      background-image: url("../../assets/images/4x/min-light.png");
+    }
+
+    &.size_mid {
+      background-image: url("../../assets/images/4x/mid-light.png");
+    }
+
+    &.size_max {
+      background-image: url("../../assets/images/4x/max-light.png");
+    }
+
+    &.size_extra {
+      background-image: url("../../assets/images/4x/extra-light.png");
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .activity,
+  .theme_light .activity,
+  .theme_dark .activity {
+    &__map {
+      justify-content: center;
+      margin-top: 0;
+      height: calc(100% - 5.7vh);
+      margin-left: -3.2vh;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    &__day {
+      align-items: center;
+      margin-top: 11.8vh;
+      flex-direction: column;
+
+      &:nth-child(2n) {
+        margin-left: 0;
+      }
+    }
+
+    &__item {
+      width: 6.4vh;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: -4vh;
+      position: relative;
+
+      &:nth-child(2n) {
+        margin-left: 0;
+        margin-right: -6.3vh;
+      }
+
+      &.size_min {
+        height: 6.4vh;
+      }
+
+      &.size_mid {
+        height: 8.1vh;
+        margin-top: -5.7vh;
+      }
+
+      &.size_max {
+        height: 11.1vh;
+        margin-top: -8.7vh;
+      }
+
+      &.size_extra {
+        height: 14.2vh;
+        margin-top: -11.8vh;
+      }
+    }
+  }
+}
