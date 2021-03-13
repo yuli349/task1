@@ -4,6 +4,7 @@ import './index.css';
 import Leaders from './slides/Leaders/Leaders';
 import Vote from './slides/Vote/Vote';
 import Chart from './slides/Chart/Chart';
+import Diagram from './slides/Diagram/Diagram';
 import Activity from './slides/Activity/Activity';
 import data from './data/data.json';
 
@@ -20,6 +21,8 @@ function renderSlide(slide) {
             return <Vote data={slide.data} />;
         case 'chart':
             return <Chart data={slide.data} />;
+        case 'diagram':
+            return <Diagram data={slide.data} theme={`theme_${theme}`}/>;
         case 'activity':
             return <Activity data={slide.data} />;
 
