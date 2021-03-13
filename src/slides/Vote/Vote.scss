@@ -1,6 +1,7 @@
 .vote,
 .theme_dark .vote {
   height: 100%;
+  overflow: hidden;
 
   &__slider {
     height: calc(100% - 20vh);
