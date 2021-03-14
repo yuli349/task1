@@ -9,6 +9,7 @@ export default class Avatar extends React.Component {
             <div className="avatar">
                 <div className="img" style={{ backgroundImage: `url(${avatarUrl})` }}/>
                 <div className="emoji">{ this.props.userEmoji }</div>
+                <div className="emoji selected">{'👍'}</div>
             </div>
         )
     }

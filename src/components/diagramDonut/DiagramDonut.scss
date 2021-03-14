@@ -1,3 +1,5 @@
+@import '../../sass/constants.scss';
+
 .diagram__donut,
 .theme_dark .diagram__donut {
   position: relative;
@@ -9,7 +11,7 @@
   &-text {
     width: 18vw;
     font-weight: 500;
-    color: #918F8A;
+    color: $primary2;
     font-size: 2.4vw;
     line-height: 2.7vw;
     text-align: center;
@@ -21,7 +23,7 @@
 
   &-total-text {
     font-weight: 700;
-    color: #FCFBF7;
+    color: $white;
     font-size: 3vw;
     line-height: 3.3vw;
     word-spacing: 9999999px;
@@ -31,11 +33,11 @@
 
 .theme_light .diagram__donut {
   &-text {
-    color: #BFBFBF;
+    color: $primary1;
   }
 
   &-total-text {
-    color: #261C00;
+    color: $black;
   }
 }
 

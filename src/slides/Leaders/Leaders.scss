@@ -21,13 +21,14 @@
     align-items: flex-start;
 
     .header__subtitle {
-      margin-bottom: 10.5vh;
+      margin-bottom: 5.5vh;
     }
 
     &__container {
-      height: calc(100% - 22.5vh);
+      height: calc(100% - 15.5vh);
       margin: auto;
-      min-height: 78vh;
+      min-height: 86vh;
+      position: relative;
     }
   }
 }

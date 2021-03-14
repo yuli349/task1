@@ -24,6 +24,10 @@
     margin-left: -3.2vw;
     margin-top: -3vw;
   }
+
+  .emoji.selected {
+    display: none;
+  }
 }
 
 .theme_light .avatar {
@@ -36,7 +40,7 @@
   .avatar,
   .theme_dark .avatar,
   .theme_light .avatar {
-    padding: 3vh 5.3vw 0;
+    padding: 3.3vh 5.3vw 0;
     margin: 0 auto 0.9vh;
 
     .img {

@@ -31,7 +31,6 @@ export default class Vote extends React.Component {
     render() {
         const { data } = this.props;
         const users = [...data.users];
-
         const splitArr = new Array(Math.ceil(users.length / this.state.chunks))
             .fill(null).map(_ => users.splice(0, this.state.chunks));
         return (

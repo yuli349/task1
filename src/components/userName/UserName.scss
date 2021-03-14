@@ -1,25 +1,25 @@
+@import '../../sass/constants.scss';
+
 .name,
 .theme_dark .name {
-  color: #FCFBF7;
+  color: $white;
   font-weight: 700;
-  font-size: 3.8vh;
-  line-height: 4.5vh;
+  font-size: $font-size-land-16;
+  line-height: $line-height-land-16;
   text-align: center;
-  margin-bottom: 1vh;
   word-spacing: 9999999px;
 }
 
 .theme_light .name {
 
-  color: #261C00;
+  color: $black;
 }
 
 @media only screen and (orientation: portrait) {
   .name,
   .theme_light .name,
   .theme_dark .name  {
-    font-size: 2.4vh;
-    line-height: 2.7vh;
-    margin-bottom: 1vh;
+    font-size: $font-size-port-16;
+    line-height: $line-height-port-16;
   }
 }

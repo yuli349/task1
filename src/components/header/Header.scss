@@ -1,10 +1,12 @@
+@import '../../sass/constants.scss';
+
 .header,
 .theme_dark .header {
   padding: 5vh 3vw 0;
 
   &__title {
     font-weight: 700;
-    color: #FCFBF7;
+    color: $white;
     text-align: center;
     font-size: 8vh;
     line-height: 8.5vh;
@@ -13,20 +15,20 @@
 
   &__subtitle {
     font-weight: 500;
-    color: #918F8A;
-    font-size: 4vh;
-    line-height: 4.5vh;
+    color: $primary2;
+    font-size: $font-size-land-16;
+    line-height: $line-height-land-16;
     text-align: center;
   }
 }
 
 .theme_light .header {
   &__title {
-    color: #261C00;
+    color: $black;
   }
 
   &__subtitle {
-    color: #BFBFBF;
+    color: $primary1;
   }
 }
 
@@ -41,12 +43,13 @@
       font-size: 4.5vh;
       line-height: 4.8vh;
       margin-bottom: 1.2vh;
+      margin-right: 7vw;
     }
 
     &__subtitle {
       text-align: left;
-      font-size: 2.4vh;
-      line-height: 2.7vh;
+      font-size: $font-size-port-16;
+      line-height: $line-height-port-16;
     }
   }
 }

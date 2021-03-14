@@ -1,3 +1,5 @@
+@import '../../sass/constants.scss';
+
 .chart__columns,
 .theme_dark .chart__columns {
     display: flex;
@@ -9,7 +11,7 @@
     &__item {
       text-align: center;
       font-weight: 700;
-      color: #918F8A;
+      color: $primary2;
       max-width: 7.2%;
       margin-right: 4.4%;
 
@@ -24,7 +26,7 @@
     }
 
     &__item.active .column__item-value {
-      color: #FCFBF7;
+      color: $white;
     }
 
     &__item-part {
@@ -38,14 +40,14 @@
     }
 
     &__item-name {
-      font-size: 4vh;
-      line-height: 4.5vh;
+      font-size: $font-size-land-16;
+      line-height: $line-height-land-16;
       margin-bottom: 0;
     }
 
     &__item-value {
-      font-size: 5vh;
-      line-height: 5.5vh;
+      font-size: 3vw;
+      line-height: 3.3vw;
     }
   }
 }
@@ -53,7 +55,7 @@
 .theme_light .chart__columns {
   .column {
     &__item {
-      color: #BFBFBF;
+      color: $primary1;
     }
 
     &__item.active .column__item-part {
@@ -62,7 +64,7 @@
     }
 
     &__item.active .column__item-value {
-      color: #261C00;
+      color: $black;
     }
 
     &__item-part {
@@ -95,14 +97,14 @@
       }
 
       &__item-name {
-        font-size: 2.4vh;
-        line-height: 2.7vh;
+        font-size: $font-size-port-16;
+        line-height: $line-height-port-16;
         margin-bottom: 0;
       }
 
       &__item-value {
-        font-size: 3vh;
-        line-height: 3.3vh;
+        font-size: 5vw;
+        line-height: 5.5vw;
       }
     }
   }
