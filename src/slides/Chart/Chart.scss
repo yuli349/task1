@@ -47,6 +47,7 @@
 
   &__leaders-item-value {
     margin-left: 2.1vw;
+    margin-top: 1vh;
   }
 
   &__leaders-item .avatar .img {
@@ -89,7 +90,6 @@
       border-bottom: 0.3vw solid #918f8a4d;
       margin-left: 0;
       max-width: 100%;
-      flex: 0 32%;
       padding: 2.4vh 0;
       align-items: center;
 
@@ -110,6 +110,7 @@
 
     &__leaders-item-value {
       margin-left: 3.7vw;
+      margin-top: 1vw;
     }
 
     &__leaders-item .avatar .img {

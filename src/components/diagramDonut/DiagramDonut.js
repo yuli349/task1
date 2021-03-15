@@ -2,6 +2,13 @@ import React from 'react';
 import './DiagramDonut.scss';
 import * as d3 from "d3";
 
+function getOrientation() {
+    if (window.innerWidth < window.innerHeight) {
+        return 'portrait';
+    }
+    return 'landscape';
+}
+
 export default class DiagramDonut extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +17,7 @@ export default class DiagramDonut extends React.Component {
     }
     getWidth() {
         let width = window.innerWidth * 0.36;
-        if (window.screen.orientation.type.match(/\w+/)[0] === 'portrait') {
+        if (getOrientation() === 'portrait') {
             width = window.innerHeight * 0.49;
         }
         return width;

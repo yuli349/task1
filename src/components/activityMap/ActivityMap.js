@@ -1,6 +1,13 @@
 import './ActivityMap.scss';
 import React from "react";
 
+function getOrientation() {
+    if (window.innerWidth < window.innerHeight) {
+        return 'portrait';
+    }
+    return 'landscape';
+}
+
 function renderColumn(item) {
     switch (true) {
         case item > 0 && item < 3:
@@ -15,7 +22,7 @@ function renderColumn(item) {
 }
 
 function renderZIndex(index) {
-    if (window.screen.orientation.type.match(/\w+/)[0] === 'portrait') {
+    if (getOrientation() === 'portrait') {
         return index;
     }
     return 0;
@@ -34,7 +41,7 @@ export default class ActivityMap extends React.Component {
             const days = [...value];
             const splitArr = new Array(Math.ceil(days.length / 2))
                 .fill(null).map(_ => days.splice(0, 2));
-            if (window.screen.orientation.type.match(/\w+/)[0] === 'landscape') {
+            if (getOrientation() === 'landscape') {
                 newWeek.push(splitArr.map((item) => Math.max.apply(Math, item)));
             }
             else {
@@ -49,7 +56,7 @@ export default class ActivityMap extends React.Component {
         });
     }
     componentDidMount() {
-        window.screen.orientation.onchange = this.setNewWeek.bind(this);
+        window.addEventListener('resize', this.setNewWeek.bind(this));
     }
     render() {
         return (

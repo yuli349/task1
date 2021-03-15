@@ -6,6 +6,13 @@ import Header from '../../components/header/Header';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
+function getOrientation() {
+    if (window.innerWidth < window.innerHeight) {
+        return 'portrait';
+    }
+    return 'landscape';
+}
+
 export default class Vote extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +21,7 @@ export default class Vote extends React.Component {
     }
     getChunks() {
         let chunks = 6;
-        if (window.screen.orientation.type.match(/\w+/)[0] === 'portrait') {
+        if (getOrientation() === 'portrait') {
             chunks = 8;
         }
         return chunks;
@@ -26,7 +33,7 @@ export default class Vote extends React.Component {
 
     }
     componentDidMount() {
-        window.screen.orientation.onchange = this.setChunks.bind(this);
+        window.addEventListener('resize', this.setChunks.bind(this));
     }
     render() {
         const { data } = this.props;
@@ -48,7 +55,7 @@ export default class Vote extends React.Component {
                         <Slider>
                             {splitArr.map((arr, index) => {
                                 return (
-                                    <Slide index={index}>
+                                    <Slide index={index} key={index}>
                                         <VoteSlide
                                             selectedUser={data.selectedUserId}
                                             key={index}

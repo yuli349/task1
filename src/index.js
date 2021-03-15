@@ -22,7 +22,7 @@ function renderSlide(slide) {
         case 'chart':
             return <Chart data={slide.data} />;
         case 'diagram':
-            return <Diagram data={slide.data} theme={`theme_${theme}`}/>;
+            return <Diagram data={slide.data} theme={`theme_${theme}`} />;
         case 'activity':
             return <Activity data={slide.data} />;
 
