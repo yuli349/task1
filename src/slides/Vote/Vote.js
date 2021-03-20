@@ -3,8 +3,6 @@ import React from 'react';
 import './Vote.scss';
 import VoteSlide from '../../components/voteSlide/VoteSlide';
 import Header from '../../components/header/Header';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function getOrientation() {
     if (window.innerWidth < window.innerHeight) {
@@ -20,11 +18,7 @@ export default class Vote extends React.Component {
         this.setChunks();
     }
     getChunks() {
-        let chunks = 6;
-        if (getOrientation() === 'portrait') {
-            chunks = 8;
-        }
-        return chunks;
+        return getOrientation() === 'portrait' ? 8 : 6;
     }
     setChunks() {
         this.setState({
@@ -32,43 +26,43 @@ export default class Vote extends React.Component {
         });
 
     }
+    getUsersByOffset(offset = undefined) {
+        const { users } = this.props.data;
+        return offset !== undefined ? users.slice(offset) : users;
+    }
     componentDidMount() {
         window.addEventListener('resize', this.setChunks.bind(this));
     }
     render() {
         const { data } = this.props;
-        const users = [...data.users];
-        const splitArr = new Array(Math.ceil(users.length / this.state.chunks))
-            .fill(null).map(_ => users.splice(0, this.state.chunks));
+        const { chunks } = this.state;
+        const offset = data.offset;
+        const usersByOffset = this.getUsersByOffset(offset);
+
+        const users = [...usersByOffset];
+
+        const usersFormatted = new Array(Math.ceil(users.length / chunks))
+            .fill(null)
+            .map(_ => users.splice(0, chunks));
         return (
             <div className="vote">
                 <Header title={data.title} subtitle={data.subtitle}/>
 
-                <div className="vote__slider">
-                    <CarouselProvider
-                        naturalSlideWidth={100}
-                        naturalSlideHeight={this.state.chunks === 6 ? 60 : 150}
-                        touchEnabled={false}
-                        totalSlides={splitArr.length}
-                        orientation={'vertical'}
-                    >
-                        <Slider>
-                            {splitArr.map((arr, index) => {
-                                return (
-                                    <Slide index={index} key={index}>
-                                        <VoteSlide
-                                            selectedUser={data.selectedUserId}
-                                            key={index}
-                                            items={arr}/>
-                                    </Slide>
-                                );
-                            })}
-                        </Slider>
-                        <div className="vote__slider-btns">
-                            <ButtonBack/>
-                            <ButtonNext/>
-                        </div>
-                    </CarouselProvider>
+                <div className={`vote__slider ${usersByOffset.length < 5 ? 'short' : ''}`}>
+                    {usersFormatted.map((userItems, index) => {
+                        return (
+                            <div key={index} className="vote__slider-item">
+                                <VoteSlide
+                                    selectedUser={data.selectedUserId}
+                                    key={index}
+                                    items={userItems}/>
+                            </div>
+                        );
+                    })}
+                    <div className="vote__slider-btns">
+                        <button disabled={!offset} className="vote__slider-back-button"/>
+                        <button disabled={offset > users.length - chunks} className="vote__slider-next-button"/>
+                    </div>
                 </div>
             </div>
         );

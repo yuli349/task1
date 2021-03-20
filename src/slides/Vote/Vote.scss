@@ -5,6 +5,24 @@
 
   &__slider {
     height: calc(100% - 20vh);
+    position: relative;
+    overflow: hidden;
+
+    &-back-button {
+      margin-bottom: 15vh;
+      transform: rotate(180deg);
+    }
+
+    &-item {
+      height: 100%;
+    }
+  }
+
+  &__slider.short {
+    .vote__slide-item:nth-child(1),
+    .vote__slide-item:nth-child(4) {
+      top: 0;
+    }
   }
 
   &__slider-btns {
@@ -16,12 +34,6 @@
     justify-content: space-around;
     margin-left: -4.8vw;
     padding: 0;
-  }
-
-  .carousel {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
 
     button {
       width: 9.6vw;
@@ -41,18 +53,9 @@
         background-image: url("../../assets/images/button-hover-dark.svg");
       }
     }
-
-    &__back-button {
-      margin-bottom: 15vh;
-      transform: rotate(180deg);
-    }
   }
 
-  .carousel__slider {
-    height: 100%;
-  }
-
-  .carousel__slide {
+  &__slide {
     &:nth-child(1) {
       .vote__slide-item:nth-child(1) .avatar .img {
         background-image: url("../../assets/images/2x/1.jpg");
@@ -97,7 +100,7 @@
 }
 
 .theme_light .vote {
-  .carousel {
+  &__slider-btns {
     button {
       background-image: url("../../assets/images/button-hover-light.svg");
 
@@ -114,6 +117,20 @@
   .theme_light .vote {
     &__slider {
       height: calc(100% - 22vh);
+
+      &-back-button {
+        margin-bottom: 0;
+      }
+    }
+
+    &__slider.short {
+      .vote__slide {
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      .vote__slide-item:nth-child(2) {
+        top: 50%;
+      }
     }
 
     &__slider-btns {
@@ -123,22 +140,16 @@
       display: flex;
       justify-content: space-between;
       padding: 3.2vh 0;
-    }
 
-    .carousel {
       button {
         max-width: 17vw;
         max-height: 17vw;
         width: 9.6vmax;
         height: 9.6vmax;
       }
-
-      &__back-button {
-        margin-bottom: 0;
-      }
     }
 
-    .carousel__slide {
+    &__slide {
       &:nth-child(1) {
         .vote__slide-item:nth-child(7) .avatar .img {
           background-image: url("../../assets/images/2x/5.jpg");

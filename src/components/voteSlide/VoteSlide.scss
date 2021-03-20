@@ -4,6 +4,8 @@
   padding: 1vh 4.6vw !important;
   grid-gap: 1vh 4.6vw;
   grid-auto-columns: minmax(9.6vw, auto);
+  height: 100%;
+  align-items: center;
 
   &-item {
     width: 15.6vw;
@@ -15,7 +17,7 @@
     &:nth-child(6n+1) {
       grid-column: 1;
       position: relative;
-      top: 19.2vh;
+      top: 50%;
     }
 
     &:nth-child(6n+2),
@@ -31,7 +33,7 @@
     &:nth-child(6n+4) {
       grid-column: 5;
       position: relative;
-      top: 19.2vh;
+      top: 50%;
     }
   }
 
@@ -66,7 +68,7 @@
     padding: 3.2vh 6.4vw !important;
     grid-gap: 3.2vh 2vw;
     grid-auto-columns: minmax(27.7vw, auto);
-    grid-auto-rows: minmax(auto, 21.2vh);
+    grid-auto-rows: minmax(auto, auto);
     height: 100%;
 
     &-item {
