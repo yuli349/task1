@@ -1,6 +1,20 @@
 import React from 'react';
 import './СhartColumns.scss';
 
+function getOrientation() {
+    if (window.innerWidth < window.innerHeight) {
+        return 'portrait';
+    }
+    return 'landscape';
+}
+
+function renderValueSize() {
+    if (getOrientation() === 'portrait') {
+        return 40.4;
+    }
+    return 31;
+}
+
 export default class ChartColumns extends React.Component {
     render() {
 
@@ -17,7 +31,7 @@ export default class ChartColumns extends React.Component {
                         >
                             <div className='column__item-value'>{item.value > 0 ? item.value : ''}</div>
                             <div className="column__item-part"
-                                 style={{ height: `${item.value*43/maxValue + 'vh'}`}}
+                                 style={{ height: `${item.value*renderValueSize()/maxValue + 'vh'}`}}
                             />
                             <div className='column__item-name'>{item.title}</div>
                         </div>

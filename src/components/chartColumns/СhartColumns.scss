@@ -36,7 +36,7 @@
       border-radius: 1vh;
       max-height: 33vh;
       min-height: 2vh;
-      margin: 2vh 0 2.8vh;
+      margin: 2.4vh 0 3.3vh;
     }
 
     &__item-name {
@@ -47,7 +47,7 @@
 
     &__item-value {
       font-size: 3vw;
-      line-height: 3.3vw;
+      line-height: 3.1vw;
     }
   }
 }
@@ -94,19 +94,19 @@
       &__item-part {
         border-radius: 1vh;
         max-height: 40.6vh;
-        min-height: 1.2vh;
-        margin: 1.2vh 0 1.5vh;
+        min-height: 1.3vh;
+        margin: 1.2vh 0 1.8vh;
       }
 
       &__item-name {
         font-size: $font-size-port-16;
-        line-height: $line-height-port-16;
+        line-height: 2.2vh;
         margin-bottom: 0;
       }
 
       &__item-value {
         font-size: 5vw;
-        line-height: 5.5vw;
+        line-height: 5.8vw;
       }
     }
   }

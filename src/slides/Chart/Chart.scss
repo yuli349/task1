@@ -4,12 +4,12 @@
   overflow: hidden;
 
   &__container {
-    padding: 8.5vh 8.7vw 0;
+    padding: 9.4vh 8.7vw 0;
     height: calc(100% - 20vh);
   }
 
   &__leaders {
-    padding: 5.4vh 0;
+    padding: 6.6vh 0;
     display: flex;
     justify-content: center;
   }
@@ -20,15 +20,11 @@
     width: 100%;
     justify-content: flex-start;
     border-right: 0.3vw solid #918f8a4d;
-    margin-left: 2.4vw;
+    margin-left: 2.6vw;
     max-width: 35.3vw;
 
     &:last-child {
       border-right: none;
-    }
-
-    &:first-child {
-      margin-left: 0;
     }
   }
 
@@ -40,19 +36,20 @@
 
   &__leaders-item .name {
     text-align: left;
-    margin-left: 2.1vw;
+    margin-left: 2.2vw;
     word-spacing: normal;
     padding-right: 2vw;
+    line-height: 5vh;
   }
 
   &__leaders-item-value {
     margin-left: 2.1vw;
-    margin-top: 1vh;
+    margin-top: 1.4vh;
   }
 
   &__leaders-item .avatar .img {
-    width: 6vw;
-    height: 6vw;
+    width: 5.8vw;
+    height: 5.8vw;
   }
 }
 
@@ -71,7 +68,7 @@
   .theme_light .chart,
   .theme_dark .chart {
     &__container {
-      padding: 1.5vh 6.4vw 0;
+      padding: 1.3vh 6.4vw 0;
       height: calc(100% - 11.7vh);
       display: flex;
       flex-direction: column;
@@ -79,7 +76,7 @@
     }
 
     &__leaders {
-      padding: 3.6vh 0;
+      padding: 3.5vh 0;
       justify-content: space-around;
       flex-direction: column;
       height: calc(100% - 62.5vh);
@@ -90,8 +87,7 @@
       border-bottom: 0.3vw solid #918f8a4d;
       margin-left: 0;
       max-width: 100%;
-      padding: 2.4vh 0;
-      align-items: center;
+      padding: 1.5vh 0 2.1vh;
 
       &:last-child {
         border-bottom: none;
@@ -101,21 +97,26 @@
       &:first-child {
         padding-top: 0;
       }
+
+      .avatar {
+        margin: 0.9vh 0 0;
+      }
     }
 
     &__leaders-item .name {
       margin-left: 3.7vw;
       padding-right: 2vw;
+      line-height: 4.6vh;
     }
 
     &__leaders-item-value {
       margin-left: 3.7vw;
-      margin-top: 1vw;
+      margin-top: 0;
     }
 
     &__leaders-item .avatar .img {
-      width: 10vw;
-      height: 10vw;
+      width: 10.7vw;
+      height: 10.7vw;
     }
   }
 }
