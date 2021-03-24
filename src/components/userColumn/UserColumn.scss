@@ -124,8 +124,8 @@
     }
 
     &__user {
-      min-height: 26vh;
-      max-height: 26vh;
+      min-height: 24vh;
+      max-height: 24vh;
       width: 27.7vw;
       margin: auto;
     }
@@ -138,7 +138,7 @@
       padding-top: 2.7vh;
       font-size: 4.5vh;
       line-height: 4.8vh;
-      height: calc(100% - 26vh);
+      height: calc(100% - 24vh);
     }
 
     &:nth-child(4) &__block,
@@ -173,7 +173,7 @@
       margin-right: 0;
       padding-right: 0;
       bottom: 0;
-      height: 46vh;
+      height: 45vh;
       padding-top: 0;
 
       .column__block {

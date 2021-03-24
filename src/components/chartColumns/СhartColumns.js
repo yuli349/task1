@@ -6,6 +6,7 @@ export default class ChartColumns extends React.Component {
 
         const { values } = this.props;
         let maxValue = Math.max.apply(Math, values.map(function(o) { return o.value; }));
+        console.log(maxValue);
 
         return (
             <div className='chart__columns'>
@@ -15,9 +16,9 @@ export default class ChartColumns extends React.Component {
                             className={`column__item ${item.active === true ? 'active' : ''}`}
                              style={{ width: `${100/values.length + '%'}`}}
                         >
-                            <div className='column__item-value'>{item.value}</div>
+                            <div className='column__item-value'>{item.value > 0 ? item.value : ''}</div>
                             <div className="column__item-part"
-                                 style={{ height: `${item.value*33/maxValue + 'vh'}`}}
+                                 style={{ height: `${item.value*43/maxValue + 'vh'}`}}
                             />
                             <div className='column__item-name'>{item.title}</div>
                         </div>
