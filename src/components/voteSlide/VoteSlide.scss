@@ -2,7 +2,7 @@
 .theme_dark .vote__slide {
   display: grid !important;
   padding: 1.7vh 4.6vw !important;
-  grid-gap: 1.7vh 4.6vw;
+  grid-gap: 1.3vh 4.6vw;
   grid-auto-columns: minmax(9.6vw, auto);
   height: 100%;
   align-items: center;
@@ -11,7 +11,7 @@
     width: 15.6vw;
     max-height: 37.9vh !important;
     cursor: pointer;
-    padding-bottom: 4vh;
+    padding-bottom: 4.4vh;
     border-radius: 1.6vh;
 
     &:nth-child(6n+1) {
@@ -88,7 +88,7 @@
       &:nth-child(8n+5) {
         grid-column: 2;
         position: relative;
-        top: 13vh;
+        top: 13.2vh;
       }
 
       &:nth-child(8n+5) {

@@ -13,7 +13,8 @@
     overflow: hidden;
 
     &-back-button {
-      margin-bottom: 14.4vh;
+      margin-bottom: 14.2vh;
+      margin-left: 0.2vw;
       transform: rotate(180deg);
     }
 
@@ -31,12 +32,12 @@
 
   &__slider-btns {
     position: absolute;
-    top: 15.9vh;
+    top: 15.7vh;
     display: flex;
     flex-direction: column;
     left: 50%;
     justify-content: space-around;
-    margin-left: -4.8vw;
+    margin-left: -4.9vw;
     padding: 0;
 
     button {
@@ -124,8 +125,17 @@
 
       &-back-button {
         margin-bottom: 0;
-        top: -0.9vh;
+        top: -0.6vh;
+        margin-left: 0.1vh;
       }
+    }
+
+    .name {
+      line-height: 2.8vh;
+    }
+
+    .header__title {
+      letter-spacing: 0;
     }
 
     &__slider.short {
@@ -139,8 +149,8 @@
     }
 
     &__slider-btns {
-      top: 1vh;
-      margin-left: -4.9vh;
+      top: 0.9vh;
+      margin-left: -5vh;
       height: 100%;
       display: flex;
       justify-content: space-between;
