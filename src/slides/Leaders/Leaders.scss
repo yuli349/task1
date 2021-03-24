@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     height: calc(100% - 22.5vh);
+    margin-top: 1vh;
   }
 }
 
@@ -21,7 +22,7 @@
     align-items: flex-start;
 
     .header__subtitle {
-      margin-bottom: 5.5vh;
+      margin-bottom: 10.5vh;
     }
 
     &__container {

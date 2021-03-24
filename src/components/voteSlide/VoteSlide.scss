@@ -1,8 +1,8 @@
 .vote__slide,
 .theme_dark .vote__slide {
   display: grid !important;
-  padding: 1vh 4.6vw !important;
-  grid-gap: 1vh 4.6vw;
+  padding: 1.7vh 4.6vw !important;
+  grid-gap: 1.7vh 4.6vw;
   grid-auto-columns: minmax(9.6vw, auto);
   height: 100%;
   align-items: center;
@@ -17,7 +17,7 @@
     &:nth-child(6n+1) {
       grid-column: 1;
       position: relative;
-      top: 50%;
+      top: 52%;
     }
 
     &:nth-child(6n+2),
@@ -33,7 +33,7 @@
     &:nth-child(6n+4) {
       grid-column: 5;
       position: relative;
-      top: 50%;
+      top: 52%;
     }
   }
 
@@ -75,6 +75,7 @@
       width: 27.7vw;
       height: 21.2vh !important;
       cursor: pointer;
+      border-radius: 1vh;
 
       &:nth-child(8n+1),
       &:nth-child(8n+4),
@@ -88,6 +89,10 @@
         grid-column: 2;
         position: relative;
         top: 13vh;
+      }
+
+      &:nth-child(8n+5) {
+        top: 12.5vh;
       }
 
       &:nth-child(8n+3),

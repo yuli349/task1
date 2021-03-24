@@ -15,18 +15,17 @@
 
   &:nth-child(1),
   &:nth-child(5) {
-    padding-top: 10vh;
+    padding-top: 10.5vh;
     z-index: 1;
   }
 
   &__user {
-    min-height: 37vh;
-    max-height: 37vh;
+    min-height: 43vh;
+    max-height: 43vh;
     width: 15.6vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
   }
 
   &.selected .emoji.selected {
@@ -124,8 +123,8 @@
     }
 
     &__user {
-      min-height: 24vh;
-      max-height: 24vh;
+      min-height: 24.5vh;
+      max-height: 24.5vh;
       width: 27.7vw;
       margin: auto;
     }

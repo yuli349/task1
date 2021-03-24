@@ -6,7 +6,6 @@ export default class ChartColumns extends React.Component {
 
         const { values } = this.props;
         let maxValue = Math.max.apply(Math, values.map(function(o) { return o.value; }));
-        console.log(maxValue);
 
         return (
             <div className='chart__columns'>
