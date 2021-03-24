@@ -3,6 +3,10 @@
   height: 100%;
   overflow: hidden;
 
+  .header__title {
+    letter-spacing: -0.1vh;
+  }
+
   &__slider {
     height: calc(100% - 20vh);
     position: relative;

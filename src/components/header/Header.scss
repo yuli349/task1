@@ -11,7 +11,6 @@
     font-size: 8vh;
     line-height: 8.5vh;
     margin-bottom: 2.4vh;
-    letter-spacing: -0.1vh;
   }
 
   &__subtitle {
@@ -20,6 +19,7 @@
     font-size: $font-size-land-16;
     line-height: $line-height-land-16;
     text-align: center;
+    letter-spacing: 0.15vh;
   }
 }
 
@@ -49,6 +49,7 @@
 
     &__subtitle {
       text-align: left;
+      letter-spacing: 0;
       font-size: $font-size-port-16;
       line-height: $line-height-port-16;
     }
