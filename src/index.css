@@ -9,6 +9,10 @@ body {
   color: #BFBFBF;
 }
 
+.cloak {
+  display: none;
+}
+
 body,
 body.theme_dark,
 body .theme_dark {

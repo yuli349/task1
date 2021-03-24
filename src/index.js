@@ -1,45 +1,50 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import ReactDOMServer from 'react-dom/server';
+
 import Leaders from './slides/Leaders/Leaders';
 import Vote from './slides/Vote/Vote';
 import Chart from './slides/Chart/Chart';
 import Diagram from './slides/Diagram/Diagram';
 import Activity from './slides/Activity/Activity';
-import data from './data/data.json';
 
-const urlParams = new URLSearchParams(window.location.search);
-const slideId = parseInt(urlParams.get('slide') || '1', 10);
-const slide = data[slideId - 1] || data[0];
-const theme = urlParams.get('theme') === 'light' ? 'light' : 'dark';
+import './index.css';
 
-function renderSlide(slide) {
-    switch(slide.alias) {
-        case 'leaders':
-            return <Leaders data={slide.data} />;
-        case 'vote':
-            return <Vote data={slide.data} />;
-        case 'chart':
-            return <Chart data={slide.data} />;
-        case 'diagram':
-            return <Diagram data={slide.data} theme={`theme_${theme}`} />;
-        case 'activity':
-            return <Activity data={slide.data} />;
-
-        default:
-            return <div>unknown alias</div>;
-    }
+export function getData() {
+    return import('./data/data.json').then(dataModule => dataModule.default);
 }
 
-ReactDOM.render(
-    <React.StrictMode>
-        <div className={`theme_${theme}`}>
-            {renderSlide(slide)}
-        </div>
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+export function renderTemplate(alias, data) {
+    let element;
+    switch(alias) {
+        case 'leaders':
+            element = <Leaders data={data} />;
+            break;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+        case 'vote':
+            element = <Vote data={data} />;
+            break;
+
+        case 'chart':
+            element = <Chart data={data} />;
+            break;
+
+        case 'diagram':
+            element = <Diagram data={data} theme={`theme_dark`} />;
+            break;
+
+        case 'activity':
+            element = <Activity data={data} />;
+            break;
+
+        default:
+            element = <div>Неизвестный слайд</div>
+    }
+
+    return ReactDOMServer.renderToStaticMarkup(element);
+}
+
+// Expose global functions
+if (typeof window === 'object') {
+    window.getData = getData;
+    window.renderTemplate = renderTemplate;
+}
