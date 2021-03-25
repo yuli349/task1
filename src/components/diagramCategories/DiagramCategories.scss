@@ -72,8 +72,8 @@
   }
 
   &:nth-child(2) .diagram__category-circle {
-    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
-    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4);
+    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%);
+    box-shadow: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9);
   }
 
   &:nth-child(3) .diagram__category-circle {
@@ -125,7 +125,7 @@
     }
 
     &-left {
-      letter-spacing: 0;
+      letter-spacing: 0.05vh;
     }
 
     &-value {
