@@ -39,7 +39,8 @@
     margin-left: 2.2vw;
     word-spacing: normal;
     padding-right: 2vw;
-    line-height: 5vh;
+    line-height: 4.8vh;
+    letter-spacing: 0.15vh;
   }
 
   &__leaders-item-value {
@@ -107,6 +108,7 @@
       margin-left: 3.7vw;
       padding-right: 2vw;
       line-height: 4vh;
+      letter-spacing: 0.1vh;
     }
 
     &__leaders-item-value {
