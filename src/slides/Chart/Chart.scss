@@ -37,7 +37,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    top: -0.1vw;
+    top: -0.2vw;
   }
 
   &__leaders-item .name {
@@ -46,7 +46,7 @@
     word-spacing: normal;
     padding-right: 2vw;
     line-height: 4.8vh;
-    letter-spacing: 0;
+    letter-spacing: 0.1vh;
   }
 
   &__leaders-item-value {
@@ -55,8 +55,8 @@
   }
 
   &__leaders-item .avatar .img {
-    width: 5.8vw;
-    height: 5.8vw;
+    width: 5.9vw;
+    height: 5.9vw;
   }
 }
 
