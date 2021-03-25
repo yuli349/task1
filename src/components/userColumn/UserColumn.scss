@@ -40,7 +40,7 @@
     border-radius: 0;
     padding-top: 4.7vh;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
-    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
     font-weight: 700;
     color: $white;
     text-align: center;
@@ -73,7 +73,7 @@
 
   &:nth-child(3) &__block {
     border-radius: 1.5vh 1.5vh 0 0;
-    background: radial-gradient(91.67% 125.17% at 67.17% -11.17%, #FFA300 0%, #2D1C00 100%);
+    background: radial-gradient(91.67% 120.17% at 70.17% -11.17%, #FFA300 0%, #2D1C00 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4);
   }
 }
