@@ -4,7 +4,7 @@
 
   &__container {
     height: calc(100% - 20vh);
-    padding: 0 6.3vw;
+    padding: 13.9vh 6.3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@
   .diagram {
     &__container {
       height: calc(100% - 12vh);
-      padding: 0 6.4vw 3.6vh;
+      padding: 4.8vh 6.4vw 3.6vh;
       flex-direction: column;
     }
   }

@@ -4,12 +4,16 @@
   overflow: hidden;
 
   .header__title {
-    letter-spacing: -0.15vh;
+   letter-spacing: -0.1vh;
+  }
+
+  .header__subtitle {
+   letter-spacing: 0.1vh;
   }
 
   .name, .theme_dark .name {
-    line-height: 4.7vh;
-    letter-spacing: 0.15vh;
+    line-height: 4.8vh;
+    letter-spacing: 0.1vh;
   }
 
   &__slider {
@@ -135,11 +139,12 @@
     }
 
     .name {
-      line-height: 2.7vh;
+      line-height: 2.8vh;
       letter-spacing: 0;
     }
 
-    .header__title {
+    .header__title,
+    .header__subtitle {
       letter-spacing: 0;
     }
 
@@ -154,7 +159,7 @@
     }
 
     &__slider-btns {
-      top: 0.9vh;
+      top: 1vh;
       margin-left: -5vh;
       height: 100%;
       display: flex;
@@ -162,8 +167,8 @@
       padding: 3.2vh 0;
 
       button {
-        max-width: 18vw;
-        max-height: 18vw;
+        max-width: 18.1vw;
+        max-height: 18.1vw;
         width: 10vmax;
         height: 10vmax;
       }

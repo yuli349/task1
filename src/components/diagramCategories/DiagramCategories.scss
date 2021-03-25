@@ -7,7 +7,7 @@
   font-weight: 500;
   color: $primary2;
   font-size: $font-size-land-16;
-  line-height: $line-height-land-16;
+  line-height: 1.2;
 }
 
 .diagram__category,
@@ -15,15 +15,10 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 0.3vw solid #918f8a4d;
-  padding: 4vh 0;
+  padding: 4.3vh 0;
 
   &:last-child {
     border-bottom: none;
-    padding-bottom: 0;
-  }
-
-  &:first-child {
-    padding-top: 0;
   }
 
   &:first-child .diagram__category-circle {
@@ -50,6 +45,7 @@
     display: flex;
     color: $white;
     align-items: center;
+    letter-spacing: 0.1vh;
   }
 
   &-circle {
@@ -64,7 +60,7 @@
   }
 
   &-value {
-    margin-left: 2.4vw;
+    margin-left: 2.9vw;
   }
 }
 
@@ -101,7 +97,8 @@
   .theme_dark .diagram__categories {
     margin-left: 0;
     font-size: $font-size-port-16;
-    line-height: $line-height-port-16;
+    line-height: 2.8vh;
+    margin-top: 2.5vh;
   }
 
   .diagram__category,
@@ -114,11 +111,6 @@
 
     &:last-child {
       border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    &:first-child {
-      padding-top: 0;
     }
 
     &-circle {
@@ -132,8 +124,12 @@
       display: flex;
     }
 
+    &-left {
+      letter-spacing: 0;
+    }
+
     &-value {
-      margin-left: 4vw;
+      margin-left: 4.4vw;
     }
   }
 

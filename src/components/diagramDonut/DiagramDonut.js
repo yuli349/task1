@@ -13,7 +13,7 @@ export default class DiagramDonut extends React.Component {
     constructor(props) {
         super(props);
         this.state = {width: this.getWidth()};
-        this.setWidth();
+        setTimeout(() => {this.drawDonutSvg()}, 0);
     }
     getWidth() {
         let width = window.innerWidth * 0.36;
