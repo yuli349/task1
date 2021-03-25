@@ -11,14 +11,11 @@ export default class Diagram extends React.Component {
 
     render() {
         const { data } = this.props;
-        const urlParams = new URLSearchParams(window.location.search);
-        const theme = urlParams.get('theme') === 'light' ? 'light' : 'dark';
-
         return (
             <div className="diagram">
                 <Header title={data.title} subtitle={data.subtitle}/>
                 <div className="diagram__container">
-                    <DiagramDonut data={data} theme={theme} values={this.getCategoriesValue()}/>
+                    <DiagramDonut data={data} values={this.getCategoriesValue()}/>
                     <DiagramCategories categories={data.categories}/>
                 </div>
             </div>

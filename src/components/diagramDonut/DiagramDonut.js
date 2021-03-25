@@ -12,8 +12,13 @@ function getOrientation() {
 export default class DiagramDonut extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {width: this.getWidth()};
+        this.state = {
+            width: this.getWidth(),
+            theme: 'dark',
+        };
         setTimeout(() => {this.drawDonutSvg()}, 0);
+        const urlParams = new URLSearchParams(window.location.search);
+        this.state.theme = urlParams.get('theme') === 'light' ? 'light' : 'dark';
     }
     getWidth() {
         let width = window.innerWidth * 0.36;
@@ -213,7 +218,7 @@ export default class DiagramDonut extends React.Component {
             .attr("class", "arc")
         pie(data).forEach(arc.padAngle(0.01));
 
-        if (this.props.theme === "theme_dark") {
+        if (this.state.theme === "dark") {
             g.append("path")
                 .attr("d", arc)
                 .style("fill", function (d) {

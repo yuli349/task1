@@ -29,7 +29,7 @@ export function renderTemplate(alias, data) {
             break;
 
         case 'diagram':
-            element = <Diagram data={data} theme={`theme_dark`} />;
+            element = <Diagram data={data} />;
             break;
 
         case 'activity':
