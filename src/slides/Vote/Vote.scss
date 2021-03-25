@@ -3,17 +3,8 @@
   height: 100%;
   overflow: hidden;
 
-  .header__title {
-   letter-spacing: -0.1vh;
-  }
-
-  .header__subtitle {
-   letter-spacing: 0.1vh;
-  }
-
   .name, .theme_dark .name {
     line-height: 4.8vh;
-    letter-spacing: 0.1vh;
   }
 
   &__slider {

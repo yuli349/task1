@@ -218,7 +218,25 @@ export default class DiagramDonut extends React.Component {
             .attr("class", "arc")
         pie(data).forEach(arc.padAngle(0.01));
 
-        if (this.state.theme === "dark") {
+        if (document.body.classList.contains('theme_light') || this.state.theme === "light") {
+            g.append("path")
+                .attr("d", arc)
+                .style("fill", function (d) {
+                    if (d.data.pie === 0) {
+                        return "url(#light_gradient0)"
+                    }
+                    if (d.data.pie === 1) {
+                        return "url(#light_gradient1)"
+                    }
+                    if (d.data.pie === 2) {
+                        return "url(#light_gradient2)"
+                    }
+                    if (d.data.pie === 3) {
+                        return "url(#light_gradient3)"
+                    }
+                })
+        }
+        else {
             g.append("path")
                 .attr("d", arc)
                 .style("fill", function (d) {
@@ -236,24 +254,6 @@ export default class DiagramDonut extends React.Component {
                     }
                 })
                 .style("filter", "url(#drop-shadow)")
-        }
-        else {
-            g.append("path")
-                .attr("d", arc)
-                .style("fill", function (d) {
-                    if (d.data.pie === 0) {
-                        return "url(#light_gradient0)"
-                    }
-                    if (d.data.pie === 1) {
-                        return "url(#light_gradient1)"
-                    }
-                    if (d.data.pie === 2) {
-                        return "url(#light_gradient2)"
-                    }
-                    if (d.data.pie === 3) {
-                        return "url(#light_gradient3)"
-                    }
-                })
         }
     }
 
