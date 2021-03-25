@@ -1,28 +1,40 @@
-.leaders {
+.leaders,
+.theme_dark .leaders {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 100%;
   overflow: hidden;
 
+  .name {
+    line-height: 4.7vh;
+  }
+
   .header__subtitle {
     margin-bottom: 7.5vh;
+    line-height: 4.6vh;
   }
 
   &__container {
     display: flex;
     align-items: center;
     height: calc(100% - 22.5vh);
-    margin-top: 0.2vh;
+    margin-top: 0.4vh;
   }
 }
 
 @media only screen and (orientation: portrait) {
-  .leaders {
+  .leaders,
+  .theme_dark .leaders {
     align-items: flex-start;
 
     .header__subtitle {
       margin-bottom: 10.5vh;
+      line-height: 2.6vh;
+    }
+
+    .name {
+      line-height: 2.7vh;
     }
 
     &__container {
