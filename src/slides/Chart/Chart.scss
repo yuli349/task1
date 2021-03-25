@@ -84,7 +84,7 @@
 
     &__leaders-item {
       border-right: none;
-      border-bottom: 0.5vw solid #918f8a4d;
+      border-bottom: 0.6vw solid #918f8a4d;
       margin-left: 0;
       max-width: 100%;
       padding: 1.9vh 0 2.3vh;
@@ -106,12 +106,12 @@
     &__leaders-item .name {
       margin-left: 3.7vw;
       padding-right: 2vw;
-      line-height: 3.9vh;
+      line-height: 4vh;
     }
 
     &__leaders-item-value {
       margin-left: 3.7vw;
-      margin-top: 0.5vw;
+      margin-top: 0;
     }
 
     &__leaders-item .avatar .img {

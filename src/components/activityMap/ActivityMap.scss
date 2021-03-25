@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4vw;
-    margin-left: -5vw;
+    margin-top: 2.9vw;
+    margin-left: -2vw;
   }
 
   &__day {
@@ -74,16 +74,16 @@
   .theme_dark .activity {
     &__map {
       justify-content: center;
-      margin-top: 0;
+      margin-top: -2.3vw;
       height: calc(100% - 5.7vh);
-      margin-left: -3.2vh;
+      margin-left: -2.9vh;
       flex-direction: row;
       align-items: flex-start;
     }
 
     &__day {
       align-items: center;
-      margin-top: 12.8vh;
+      margin-top: 13vh;
       flex-direction: column;
 
       &:nth-child(2n) {
@@ -92,7 +92,7 @@
     }
 
     &__item {
-      width: 6.4vh;
+      width: 6.5vh;
       background-size: contain;
       background-repeat: no-repeat;
       margin-top: -4vh;
@@ -104,22 +104,22 @@
       }
 
       &.size_min {
-        height: 6.4vh;
+        height: 6.5vh;
       }
 
       &.size_mid {
-        height: 8.1vh;
-        margin-top: -5.7vh;
+        height: 7.8vh;
+        margin-top: -5.2vh;
       }
 
       &.size_max {
-        height: 11.1vh;
-        margin-top: -8.7vh;
+        height: 11vh;
+        margin-top: -8.5vh;
       }
 
       &.size_extra {
-        height: 14.2vh;
-        margin-top: -11.8vh;
+        height: 14vh;
+        margin-top: -11.6vh;
       }
     }
   }

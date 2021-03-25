@@ -42,7 +42,7 @@ export default class ActivityMap extends React.Component {
             const splitArr = new Array(Math.ceil(days.length / 2))
                 .fill(null).map(_ => days.splice(0, 2));
             if (getOrientation() === 'landscape') {
-                newWeek.push(splitArr.map((item) => Math.max.apply(Math, item)));
+                newWeek.push(splitArr.map((item) => item.reduce((a, b) => a + b, 0)));
             }
             else {
                 newWeek.push(value);
