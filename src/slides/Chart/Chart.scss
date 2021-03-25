@@ -9,7 +9,7 @@
   }
 
   .header__subtitle {
-    font-size: 4.1vh;
+    font-size: 4.2vh;
     letter-spacing: 0;
   }
 
@@ -37,7 +37,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    top: -0.2vw;
+    top: -0.1vw;
   }
 
   &__leaders-item .name {
@@ -45,8 +45,8 @@
     margin-left: 2.2vw;
     word-spacing: normal;
     padding-right: 2vw;
-    line-height: 4.8vh;
-    letter-spacing: 0.1vh;
+    line-height: 4.7vh;
+    letter-spacing: 0;
   }
 
   &__leaders-item-value {
@@ -55,8 +55,8 @@
   }
 
   &__leaders-item .avatar .img {
-    width: 5.9vw;
-    height: 5.9vw;
+    width: 5.8vw;
+    height: 5.8vw;
   }
 }
 

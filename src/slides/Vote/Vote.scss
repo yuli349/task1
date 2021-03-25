@@ -5,7 +5,11 @@
 
   .name, .theme_dark .name {
     line-height: 4.8vh;
-    font-size: 3.9vh;
+    font-size: 4.1vh;
+  }
+
+  .header__subtitle {
+    font-size: 4.1vh;
   }
 
   &__slider {
@@ -41,8 +45,8 @@
     padding: 0;
 
     button {
-      width: 10.2vw;
-      height: 10.2vw;
+      width: 10.3vw;
+      height: 10.3vw;
       position: relative;
       z-index: 5;
       background-image: url("../../assets/images/button-dark.svg");
@@ -133,7 +137,7 @@
     .name {
       line-height: 2.8vh;
       letter-spacing: 0;
-      font-size: 2.3vh;
+      font-size: 2.5vh;
     }
 
     .header__title,
@@ -162,8 +166,8 @@
       button {
         max-width: 18.1vw;
         max-height: 18.1vw;
-        width: 10vmax;
-        height: 10vmax;
+        width: 10.1vmax;
+        height: 10.1vmax;
       }
     }
 
