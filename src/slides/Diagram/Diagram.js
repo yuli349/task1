@@ -10,7 +10,9 @@ export default class Diagram extends React.Component {
     }
 
     render() {
-        const { data, theme } = this.props;
+        const { data } = this.props;
+        const urlParams = new URLSearchParams(window.location.search);
+        const theme = urlParams.get('theme') === 'light' ? 'light' : 'dark';
 
         return (
             <div className="diagram">
