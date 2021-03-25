@@ -9,7 +9,7 @@
   }
 
   &__leaders {
-    padding: 6.6vh 0;
+    padding: 6.8vh 0;
     display: flex;
     justify-content: center;
   }
@@ -21,7 +21,7 @@
     justify-content: flex-start;
     border-right: 0.3vw solid #918f8a4d;
     margin-left: 2.6vw;
-    max-width: 35.3vw;
+    max-width: 35.4vw;
 
     &:last-child {
       border-right: none;
@@ -48,8 +48,8 @@
   }
 
   &__leaders-item .avatar .img {
-    width: 5.8vw;
-    height: 5.8vw;
+    width: 5.9vw;
+    height: 5.9vw;
   }
 }
 
@@ -84,10 +84,10 @@
 
     &__leaders-item {
       border-right: none;
-      border-bottom: 0.3vw solid #918f8a4d;
+      border-bottom: 0.6vw solid #918f8a4d;
       margin-left: 0;
       max-width: 100%;
-      padding: 1.5vh 0 2.1vh;
+      padding: 1.4vh 0 2.4vh;
 
       &:last-child {
         border-bottom: none;
@@ -106,17 +106,18 @@
     &__leaders-item .name {
       margin-left: 3.7vw;
       padding-right: 2vw;
-      line-height: 4.6vh;
+      line-height: 4.5vh;
     }
 
     &__leaders-item-value {
       margin-left: 3.7vw;
       margin-top: 0;
+      line-height: 1.8vh;
     }
 
     &__leaders-item .avatar .img {
-      width: 10.7vw;
-      height: 10.7vw;
+      width: 10.6vw;
+      height: 10.6vw;
     }
   }
 }
