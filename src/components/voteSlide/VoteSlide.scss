@@ -17,6 +17,10 @@
       grid-column: 1;
       position: relative;
       top: 51%;
+
+      .avatar {
+        margin: 0 auto 1.6vh;
+      }
     }
 
     &:nth-child(6n+2),
@@ -33,6 +37,10 @@
       grid-column: 5;
       position: relative;
       top: 51%;
+
+      .avatar {
+        margin: 0 auto 1.6vh;
+      }
     }
   }
 
