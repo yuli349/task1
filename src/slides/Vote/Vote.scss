@@ -4,7 +4,7 @@
   overflow: hidden;
 
   .name, .theme_dark .name {
-    line-height: 4.6vh;
+    line-height: 4.8vh;
     font-size: 4.3vh;
   }
 
@@ -13,7 +13,7 @@
   }
 
   .header__title {
-    line-height: 8.7vh;
+    line-height: 8.6vh;
   }
 
   &__slider {
@@ -40,7 +40,7 @@
 
   &__slider-btns {
     position: absolute;
-    top: 15.2vh;
+    top: 15.1vh;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -133,12 +133,12 @@
 
       &-back-button {
         margin-bottom: 0;
-        top: -0.8vh;
+        top: -0.7vh;
       }
     }
 
     .avatar {
-      padding: 3.1vh 5.3vw 0;
+      padding: 3.4vh 5.3vw 0;
     }
 
     .name {
@@ -172,7 +172,7 @@
     }
 
     &__slider-btns {
-      top: 1vh;
+      top: 0.9vh;
       margin-left: -5vh;
       height: 100%;
       display: flex;
