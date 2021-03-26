@@ -65,20 +65,20 @@
   .theme_light .vote__slide {
     display: grid !important;
     padding: 3.5vh 6.4vw !important;
-    grid-gap: 3.8vh 2vw;
+    grid-gap: 3.7vh 2vw;
     grid-auto-columns: minmax(27.7vw, auto);
     grid-auto-rows: minmax(auto, auto);
     height: 100%;
 
     &-selected {
       .avatar {
-        padding: 3.3vh 5.3vw 0;
+        padding: 3.2vh 5.3vw 0;
       }
     }
 
     &-item {
       width: 27.7vw;
-      height: 21.2vh !important;
+      height: 21.3vh !important;
       cursor: pointer;
       border-radius: 1vh;
 
