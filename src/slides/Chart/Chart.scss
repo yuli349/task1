@@ -33,6 +33,11 @@
     margin-left: 2.7vw;
     max-width: 35.3vw;
 
+    &:first-child {
+      position: relative;
+      left: -0.1vh;
+    }
+
     &:last-child {
       border-right: none;
     }
@@ -62,8 +67,8 @@
   }
 
   &__leaders-item .avatar .img {
-    width: 6vw;
-    height: 6vw;
+    width: 5.9vw;
+    height: 5.9vw;
   }
 }
 
