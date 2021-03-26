@@ -4,7 +4,7 @@
   overflow: hidden;
 
   .name, .theme_dark .name {
-    line-height: 4.7vh;
+    line-height: 4.6vh;
     font-size: 4.3vh;
   }
 
@@ -13,7 +13,7 @@
   }
 
   .header__title {
-    font-size: 8.3vh;
+    line-height: 8.7vh;
   }
 
   &__slider {
@@ -134,12 +134,11 @@
       &-back-button {
         margin-bottom: 0;
         top: -0.8vh;
-        margin-left: 0.1vh;
       }
     }
 
     .avatar {
-      padding: 3.4vh 5.3vw 0;
+      padding: 3.1vh 5.3vw 0;
     }
 
     .name {
@@ -155,6 +154,7 @@
 
     .header__title {
       font-size: 4.5vh;
+      line-height: 4.8vh;
     }
 
     .header__subtitle {
@@ -172,7 +172,7 @@
     }
 
     &__slider-btns {
-      top: 0.9vh;
+      top: 1vh;
       margin-left: -5vh;
       height: 100%;
       display: flex;

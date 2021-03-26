@@ -14,7 +14,8 @@
   }
 
   .header__title {
-    font-size: 8.2vh;
+    font-size: 8.1vh;
+    line-height: 8.7vh;
   }
 
   &__leaders {
@@ -49,14 +50,14 @@
     margin-left: 2.2vw;
     word-spacing: normal;
     padding-right: 2vw;
-    line-height: 4.9vh;
+    line-height: 4.8vh;
     letter-spacing: 0;
-    font-size: 4.4vh;
+    font-size: 4.3vh;
   }
 
   &__leaders-item-value {
     margin-left: 2.1vw;
-    margin-top: 1.4vh;
+    margin-top: 1.6vh;
   }
 
   &__leaders-item .avatar .img {
