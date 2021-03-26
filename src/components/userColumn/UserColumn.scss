@@ -39,7 +39,7 @@
   }
 
   &__user-value {
-    padding: 1.4vh 0 4vh;
+    padding: 1.3vh 0 4vh;
     font-size: 3.7vh;
     color: #BFBFBF;
   }
@@ -139,7 +139,7 @@
 
     &__user-value {
       padding: 0.5vh 0 2.4vh;
-      font-size: 3.6vw;
+      font-size: 3.5vw;
     }
 
     &__block {
@@ -149,7 +149,7 @@
       height: calc(100% - 24vh);
     }
 
-    .column:nth-child(2) .avatar {
+    &:nth-child(2) .avatar {
       position: relative;
       top: -0.1vh;
     }
