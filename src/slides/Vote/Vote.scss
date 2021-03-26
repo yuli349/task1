@@ -4,7 +4,7 @@
   overflow: hidden;
 
   .name, .theme_dark .name {
-    line-height: 4.9vh;
+    line-height: 4.8vh;
     font-size: 4.2vh;
   }
 
@@ -23,7 +23,7 @@
     overflow: hidden;
 
     &-back-button {
-      margin-bottom: 14.2vh;
+      margin-bottom: 14.1vh;
       transform: rotate(180deg);
     }
 
@@ -134,7 +134,7 @@
 
       &-back-button {
         margin-bottom: 0;
-        top: -0.7vh;
+        top: -0.8vh;
       }
     }
 
@@ -143,7 +143,7 @@
     }
 
     .name {
-      line-height: 2.8vh;
+      line-height: 2.7vh;
       letter-spacing: 0;
       font-size: 2.4vh;
     }
@@ -173,7 +173,7 @@
     }
 
     &__slider-btns {
-      top: 0.8vh;
+      top: 0.9vh;
       margin-left: -5.1vh;
       height: 100%;
       display: flex;

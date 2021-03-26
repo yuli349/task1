@@ -70,6 +70,12 @@
     grid-auto-rows: minmax(auto, auto);
     height: 100%;
 
+    &-selected {
+      .avatar {
+        padding: 3.3vh 5.3vw 0;
+      }
+    }
+
     &-item {
       width: 27.7vw;
       height: 21.2vh !important;
