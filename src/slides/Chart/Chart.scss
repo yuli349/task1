@@ -30,7 +30,7 @@
     width: 100%;
     justify-content: flex-start;
     border-right: 0.3vw solid #918f8a4d;
-    margin-left: 2.8vw;
+    margin-left: 2.7vw;
     max-width: 35.3vw;
 
     &:last-child {
@@ -58,11 +58,12 @@
   &__leaders-item-value {
     margin-left: 2.1vw;
     margin-top: 1.9vh;
+    color: #918F8A;
   }
 
   &__leaders-item .avatar .img {
-    width: 5.8vw;
-    height: 5.8vw;
+    width: 5.9vw;
+    height: 5.9vw;
   }
 }
 
