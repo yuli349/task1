@@ -19,11 +19,11 @@
     z-index: 1;
   }
 
-  //&:nth-child(1) {
-  //  .avatar {
-  //    margin: 0 auto 1.6vh;
-  //  }
-  //}
+  &:nth-child(1) {
+    .avatar {
+      margin: 0 auto 1.6vh;
+    }
+  }
 
   &__user {
     min-height: 43vh;
