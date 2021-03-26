@@ -42,7 +42,7 @@ export default class Leaders extends React.Component {
             <div className="leaders">
                 <Header title={data.title} subtitle={data.subtitle}/>
 
-                <div className="leaders__container">
+                <div className={`leaders__container ${data.selectedUserId !== undefined ? 'selected' : ''}`}>
                     {visibleUsers.map((user, index) => {
                         return (
                             <UserColumn
