@@ -4,7 +4,7 @@
   overflow: hidden;
 
   .name, .theme_dark .name {
-    line-height: 4.8vh;
+    line-height: 4.9vh;
     font-size: 4.3vh;
   }
 
@@ -14,6 +14,7 @@
 
   .header__title {
     line-height: 8.6vh;
+    font-size: 7.9vh;
   }
 
   &__slider {
@@ -40,7 +41,7 @@
 
   &__slider-btns {
     position: absolute;
-    top: 15.1vh;
+    top: 15vh;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -172,7 +173,7 @@
     }
 
     &__slider-btns {
-      top: 0.9vh;
+      top: 0.8vh;
       margin-left: -5vh;
       height: 100%;
       display: flex;
