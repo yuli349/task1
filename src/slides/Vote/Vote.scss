@@ -5,7 +5,7 @@
 
   .name, .theme_dark .name {
     line-height: 4.9vh;
-    font-size: 4.3vh;
+    font-size: 4.2vh;
   }
 
   .header__subtitle {
@@ -14,7 +14,7 @@
 
   .header__title {
     line-height: 8.6vh;
-    font-size: 7.9vh;
+    font-size: 7.8vh;
   }
 
   &__slider {
@@ -23,7 +23,7 @@
     overflow: hidden;
 
     &-back-button {
-      margin-bottom: 14vh;
+      margin-bottom: 14.1vh;
       transform: rotate(180deg);
     }
 
@@ -41,12 +41,12 @@
 
   &__slider-btns {
     position: absolute;
-    top: 15vh;
+    top: 14.9vh;
     display: flex;
     flex-direction: column;
     left: 50%;
     justify-content: space-around;
-    margin-left: -5vw;
+    margin-left: -5.1vw;
     padding: 0;
 
     button {
