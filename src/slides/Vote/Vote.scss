@@ -4,12 +4,16 @@
   overflow: hidden;
 
   .name, .theme_dark .name {
-    line-height: 4.8vh;
-    font-size: 4.4vh;
+    line-height: 4.7vh;
+    font-size: 4.3vh;
   }
 
   .header__subtitle {
     font-size: 4.2vh;
+  }
+
+  .header__title {
+    font-size: 8.3vh;
   }
 
   &__slider {
@@ -135,7 +139,7 @@
     }
 
     .avatar {
-      padding: 3.2vh 5.3vw 0;
+      padding: 3.4vh 5.3vw 0;
     }
 
     .name {
@@ -150,7 +154,7 @@
     }
 
     .header__title {
-      font-size: 8.1vh;
+      font-size: 4.5vh;
     }
 
     .header__subtitle {

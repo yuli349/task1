@@ -14,7 +14,7 @@
   }
 
   .header__title {
-    font-size: 8.1vh;
+    font-size: 8.2vh;
   }
 
   &__leaders {
@@ -51,7 +51,7 @@
     padding-right: 2vw;
     line-height: 4.9vh;
     letter-spacing: 0;
-    font-size: 4.3vh;
+    font-size: 4.4vh;
   }
 
   &__leaders-item-value {
@@ -85,6 +85,10 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+    }
+
+    .header__title {
+      font-size: 4.5vh;
     }
 
     .header__subtitle {
@@ -126,6 +130,7 @@
       padding-right: 2vw;
       line-height: 4vh;
       letter-spacing: 0;
+      font-size: 2.4vh;
     }
 
     &__leaders-item-value {
