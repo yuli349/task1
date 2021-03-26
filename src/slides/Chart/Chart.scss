@@ -13,6 +13,10 @@
     letter-spacing: 0;
   }
 
+  .header__title {
+    font-size: 8.1vh;
+  }
+
   &__leaders {
     padding: 6.6vh 0;
     display: flex;
@@ -26,7 +30,7 @@
     justify-content: flex-start;
     border-right: 0.3vw solid #918f8a4d;
     margin-left: 2.6vw;
-    max-width: 35.4vw;
+    max-width: 35.3vw;
 
     &:last-child {
       border-right: none;
@@ -47,6 +51,7 @@
     padding-right: 2vw;
     line-height: 4.9vh;
     letter-spacing: 0;
+    font-size: 4.3vh;
   }
 
   &__leaders-item-value {

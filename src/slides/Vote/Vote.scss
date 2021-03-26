@@ -5,7 +5,7 @@
 
   .name, .theme_dark .name {
     line-height: 4.8vh;
-    font-size: 4.3vh;
+    font-size: 4.4vh;
   }
 
   .header__subtitle {
@@ -45,8 +45,8 @@
     padding: 0;
 
     button {
-      width: 10vw;
-      height: 10vw;
+      width: 10.1vw;
+      height: 10.1vw;
       position: relative;
       z-index: 5;
       background-image: url("../../assets/images/button-dark.svg");
@@ -129,20 +129,28 @@
 
       &-back-button {
         margin-bottom: 0;
-        top: -0.7vh;
+        top: -0.8vh;
         margin-left: 0.1vh;
       }
+    }
+
+    .avatar {
+      padding: 3.2vh 5.3vw 0;
     }
 
     .name {
       line-height: 2.8vh;
       letter-spacing: 0;
-      font-size: 2.7vh;
+      font-size: 2.6vh;
     }
 
     .header__title,
     .header__subtitle {
       letter-spacing: 0;
+    }
+
+    .header__title {
+      font-size: 8.1vh;
     }
 
     .header__subtitle {
