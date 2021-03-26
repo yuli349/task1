@@ -90,6 +90,10 @@
       cursor: pointer;
       border-radius: 1vh;
 
+      .avatar {
+        margin: 0 auto 1.5vh !important;
+      }
+
       &:nth-child(8n+1),
       &:nth-child(8n+4),
       &:nth-child(8n+7) {
