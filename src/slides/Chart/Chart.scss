@@ -31,7 +31,7 @@
     justify-content: flex-start;
     border-right: 0.3vw solid #918f8a4d;
     margin-left: 2.7vw;
-    max-width: 35.3vw;
+    max-width: 35.35vw;
 
     &:last-child {
       border-right: none;
@@ -42,8 +42,8 @@
     padding: 0;
     margin: 0;
     position: relative;
-    left: -0.1vw;
-    top: -0.1vh;
+    //left: -0.1vw;
+    //top: -0.1vh;
   }
 
   &__leaders-item .name {
@@ -58,13 +58,13 @@
 
   &__leaders-item-value {
     margin-left: 2vw;
-    margin-top: 1.5vh;
+    margin-top: 1.6vh;
     color: #918F8A;
   }
 
   &__leaders-item .avatar .img {
-    width: 5.9vw;
-    height: 5.9vw;
+    width: 5.85vw;
+    height: 5.85vw;
   }
 }
 
