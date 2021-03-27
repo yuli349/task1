@@ -65,10 +65,12 @@
     margin-bottom: -0.3vh;
     margin-left: 0.1vh;
     margin-top: -0.05vh;
+    position: relative;
+    top: -0.2vh;
   }
 
   &:nth-child(1) .column__user-value {
-    padding: 1.5vh 0 4vh;
+    padding: 1.6vh 0 4vh;
   }
 
   &:nth-child(3) .column__user-value {
@@ -77,6 +79,8 @@
 
   &:nth-child(3) .name {
     margin-top: -0.05vh;
+    position: relative;
+    top: -0.2vh;
   }
   //
   //&:nth-child(3) .column__user-value {

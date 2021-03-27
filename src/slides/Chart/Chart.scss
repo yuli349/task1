@@ -54,17 +54,19 @@
     line-height: 4.9vh;
     font-size: 4.25vh;
     position: relative;
+    top: -0.1vh;
+    left: -0.1vw;
   }
 
   &__leaders-item-value {
     margin-left: 2vw;
-    margin-top: 1.8vh;
+    margin-top: 1.5vh;
     color: #918F8A;
   }
 
   &__leaders-item .avatar .img {
-    width: 5.82vw;
-    height: 5.82vw;
+    width: 5.95vw;
+    height: 5.95vw;
   }
 }
 
