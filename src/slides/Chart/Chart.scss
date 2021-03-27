@@ -31,7 +31,7 @@
     justify-content: flex-start;
     border-right: 0.3vw solid #918f8a4d;
     margin-left: 2.7vw;
-    max-width: 35.35vw;
+    max-width: 35.3vw;
 
     &:last-child {
       border-right: none;
@@ -42,8 +42,8 @@
     padding: 0;
     margin: 0;
     position: relative;
-    //left: -0.1vw;
-    //top: -0.1vh;
+    left: -0.1vw;
+    top: -0.1vh;
   }
 
   &__leaders-item .name {
@@ -63,8 +63,8 @@
   }
 
   &__leaders-item .avatar .img {
-    width: 5.85vw;
-    height: 5.85vw;
+    width: 5.95vw;
+    height: 5.95vw;
   }
 }
 
