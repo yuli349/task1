@@ -64,16 +64,19 @@
   &:nth-child(1) .name {
     margin-bottom: -0.3vh;
     margin-left: 0.1vh;
-    margin-top: 0.2vh;
+    margin-top: 0.05vh;
   }
 
-  &:nth-child(1) .column__user-value,
-  &:nth-child(3) .column__user-value {
+  &:nth-child(1) .column__user-value {
     padding: 1.4vh 0 4vh;
   }
 
+  &:nth-child(3) .column__user-value {
+    padding: 1.3vh 0 4vh;
+  }
+
   &:nth-child(3) .name {
-    margin-top: 0.2vh;
+    margin-top: 0.05vh;
   }
   //
   //&:nth-child(3) .column__user-value {
