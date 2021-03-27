@@ -68,6 +68,7 @@
     position: relative;
     top: 0.2vh;
     line-height: 5vh;
+    left: 0.1vh;
   }
 
   &:nth-child(1) .column__user-value {
@@ -82,7 +83,7 @@
     margin-top: -0.05vh;
     position: relative;
     top: 0.2vh;
-    line-height: 5.2vh;
+    line-height: 4.8vh;
   }
 
   &:nth-child(4) &__block,
@@ -141,6 +142,7 @@
       line-height: 2.8vh;
       margin: 0;
       top: 0;
+      left: 0;
     }
 
     &:nth-child(2) {

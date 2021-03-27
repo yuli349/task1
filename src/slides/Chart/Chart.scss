@@ -16,6 +16,8 @@
   .header__title {
     font-size: 8vh;
     line-height: 8.6vh;
+    position: relative;
+    top: -0.2vh;
   }
 
   &__leaders {
@@ -54,13 +56,13 @@
     line-height: 4.9vh;
     font-size: 4.25vh;
     position: relative;
-    top: 0.3vh;
+    top: 0.4vh;
     left: -0.1vh;
   }
 
-  //&__leaders-item:nth-child(2) .name {
-  //  top: -0.3vh;
-  //}
+  &__leaders-item:nth-child(2) .name {
+    font-size: 4.3vh;
+  }
 
   &__leaders-item-value {
     margin-left: 2vw;
@@ -99,6 +101,7 @@
     .header__title {
       font-size: 4.5vh;
       line-height: 4.8vh;
+      top: 0;
     }
 
     .header__subtitle {
@@ -143,6 +146,10 @@
       letter-spacing: 0;
       font-size: 2.4vh;
       top: 0;
+    }
+
+    &__leaders-item:nth-child(2) .name {
+      font-size: 2.4vh;
     }
 
     &__leaders-item-value {
