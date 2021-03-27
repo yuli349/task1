@@ -63,11 +63,12 @@
 
   &:nth-child(1) .name {
     position: relative;
-    top: 0.1vh;
+    top: 0.15vh;
   }
 
   &:nth-child(3) .avatar {
-    margin: 0 auto 1.7vh;
+    margin: 0 auto 1.6vh;
+    line-height: 4.7vh;
   }
 
   &:nth-child(4) &__block,
