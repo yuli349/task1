@@ -56,9 +56,14 @@
     margin-left: -2.4vw;
     padding-left: 2.4vw;
 
-    .column__block {
-      box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset -5px 2px 16px rgba(103, 103, 103, 0.6);
-    }
+    //.column__block {
+    //  box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset -5px 2px 16px rgba(103, 103, 103, 0.6);
+    //}
+  }
+
+  &:nth-child(1) .name {
+    position: relative;
+    top: 0.1vh;
   }
 
   &:nth-child(4) &__block,
@@ -71,9 +76,9 @@
     margin-right: -2.4vw;
     padding-right: 2.4vw;
 
-    .column__block {
-      box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset 9px 2px 16px rgba(103, 103, 103, 0.6);
-    }
+    //.column__block {
+    //  box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset 9px 2px 16px rgba(103, 103, 103, 0.6);
+    //}
   }
 
   &:nth-child(1) &__block,
@@ -113,6 +118,10 @@
       z-index: 2;
     }
 
+    &:nth-child(1) .name {
+      top: 0;
+    }
+
     &:nth-child(2) {
       padding-top: 15vh;
     }
@@ -137,7 +146,7 @@
     }
 
     &__user {
-      min-height: 24.5vh;
+      min-height: 23.5vh;
       max-height: 24.5vh;
       width: 27.7vw;
       margin: auto;
@@ -191,7 +200,7 @@
       margin-left: -16.2vw;
       margin-right: 0;
       padding-right: 0;
-      bottom: 0;
+      bottom: -0.4vh;
       height: 45vh;
       padding-top: 0;
 
@@ -206,11 +215,11 @@
 
       .column__block:before {
         content: '';
-        width: 15vw;
+        width: 16vw;
         height: 0.15vh;
         background: $primary2;
         left: 50%;
-        margin-left: -7.5vw;
+        margin-left: -8vw;
         position: absolute;
         top: 0;
       }
