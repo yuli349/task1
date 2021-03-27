@@ -63,12 +63,17 @@
 
   &:nth-child(1) .name {
     position: relative;
-    top: 0.15vh;
+    top: 0.2vh;
   }
 
   &:nth-child(3) .avatar {
     margin: 0 auto 1.6vh;
     line-height: 4.7vh;
+  }
+
+  &:nth-child(3) .column__user-value {
+    position: relative;
+    top: -0.1px;
   }
 
   &:nth-child(4) &__block,
