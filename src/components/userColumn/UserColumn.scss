@@ -115,10 +115,8 @@
 
 .leaders__container.selected {
   .column:nth-child(3) .name, .theme_dark .column:nth-child(3) .name {
-    margin-top: -0.05vh;
     position: relative;
     top: 0;
-    line-height: 4.8vh;
   }
 
   .column__block {
