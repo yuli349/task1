@@ -54,8 +54,9 @@
     word-spacing: normal;
     padding-right: 2vw;
     line-height: 4.7vh;
-    letter-spacing: -0.1px;
     font-size: 4.3vh;
+    position: relative;
+    top: -0.1px;
   }
 
   &__leaders-item-value {
@@ -137,6 +138,7 @@
       line-height: 4vh;
       letter-spacing: 0;
       font-size: 2.4vh;
+      top: 0;
     }
 
     &__leaders-item-value {
