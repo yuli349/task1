@@ -61,20 +61,20 @@
     //}
   }
 
-  &:nth-child(1) .name {
-    position: relative;
-    top: 0.1vh;
-    font-size: 4.1vh;
-  }
-
-  &:nth-child(3) .avatar {
-    margin: 0 auto 1.6vh;
-    line-height: 4.7vh;
-  }
-
-  &:nth-child(3) .column__user-value {
-    padding: 1.4vh 0 4vh;
-  }
+  //&:nth-child(1) .name {
+  //  position: relative;
+  //  top: 0.1vh;
+  //  font-size: 4.1vh;
+  //}
+  //
+  //&:nth-child(3) .avatar {
+  //  margin: 0 auto 1.6vh;
+  //  line-height: 4.7vh;
+  //}
+  //
+  //&:nth-child(3) .column__user-value {
+  //  padding: 1.4vh 0 4vh;
+  //}
 
   &:nth-child(4) &__block,
   &:nth-child(5) &__block {

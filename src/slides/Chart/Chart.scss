@@ -19,7 +19,7 @@
   }
 
   &__leaders {
-    padding: 6.6vh 0;
+    padding: 6.5vh 0;
     display: flex;
     justify-content: center;
   }
@@ -33,11 +33,6 @@
     margin-left: 2.7vw;
     max-width: 35.3vw;
 
-    &:first-child {
-      position: relative;
-      left: -0.1vh;
-    }
-
     &:last-child {
       border-right: none;
     }
@@ -47,29 +42,29 @@
     padding: 0;
     margin: 0;
     position: relative;
-    left: -0.1px;
-    top: 0.1px;
+    left: -0.1vw;
+    top: -0.2vh;
   }
 
   &__leaders-item .name {
     text-align: left;
-    margin-left: 2.2vw;
+    margin-left: 2vw;
     word-spacing: normal;
     padding-right: 2vw;
     line-height: 5vh;
-    font-size: 4.2vh;
+    font-size: 4.25vh;
     position: relative;
   }
 
   &__leaders-item-value {
-    margin-left: 2.1vw;
-    margin-top: 1.6vh;
+    margin-left: 2vw;
+    margin-top: 1.4vh;
     color: #918F8A;
   }
 
   &__leaders-item .avatar .img {
-    width: 5.9vw;
-    height: 5.9vw;
+    width: 6vw;
+    height: 6vw;
   }
 }
 
