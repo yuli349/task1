@@ -54,13 +54,17 @@
     line-height: 4.9vh;
     font-size: 4.25vh;
     position: relative;
-    top: -0.1vh;
-    left: -0.1vw;
+    top: -0.2vh;
+    left: -0.1vh;
+  }
+
+  &__leaders-item:nth-child(2) .name {
+    top: -0.3vh;
   }
 
   &__leaders-item-value {
     margin-left: 2vw;
-    margin-top: 1.5vh;
+    margin-top: 1.7vh;
     color: #918F8A;
   }
 
