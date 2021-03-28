@@ -64,3 +64,11 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .diagram__donut-text,
+  .theme_light .diagram__donut-text,
+  .theme_dark .diagram__donut-text {
+    margin: -10vh 0 0 -9vw;
+  }
+}

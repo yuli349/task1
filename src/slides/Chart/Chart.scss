@@ -118,6 +118,7 @@
       margin-left: 0;
       max-width: 100%;
       padding: 1.9vh 0 2.3vh;
+      min-height: 9.2vh;
 
       &:last-child {
         border-bottom: none;
@@ -153,8 +154,10 @@
     }
 
     &__leaders-item .avatar .img {
-      width: 10.7vw;
-      height: 10.7vw;
+      width: 6.6vmax;
+      height: 6.6vmax;
+      max-width: 10.7vw;
+      max-height: 10.7vw;
     }
   }
 }

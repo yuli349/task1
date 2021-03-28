@@ -211,3 +211,18 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .vote,
+  .theme_light .vote,
+  .theme_dark .vote {
+    .header__title {
+      font-size: 6.9vh;
+      letter-spacing: -0.1vh;
+    }
+
+    .name {
+      font-size: 3.3vh;
+    }
+  }
+}

@@ -12,6 +12,7 @@
     cursor: pointer;
     padding-bottom: 4.4vh;
     border-radius: 1.6vh;
+    z-index: 2;
 
     &:nth-child(6n+1) {
       grid-column: 1;
@@ -126,5 +127,13 @@
         top: 0;
       }
     }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .vote__slide,
+  .theme_light .vote__slide,
+  .theme_dark .vote__slide {
+    align-items: center;
   }
 }
