@@ -1,13 +1,8 @@
 import React from 'react';
+
 import './DiagramDonut.scss';
 import * as d3 from 'd3';
-
-function getOrientation() {
-    if (window.innerWidth < window.innerHeight) {
-        return 'portrait';
-    }
-    return 'landscape';
-}
+import getOrientation from '../../helpers/orientation';
 
 export default class DiagramDonut extends React.Component {
     constructor(props) {

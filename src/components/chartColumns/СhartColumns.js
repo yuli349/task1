@@ -1,11 +1,11 @@
 import React from 'react';
-import './СhartColumns.scss';
 
-function getOrientation() {
-    if (window.innerWidth < window.innerHeight) {
-        return 'portrait';
-    }
-    return 'landscape';
+import './СhartColumns.scss';
+import getOrientation from '../../helpers/orientation';
+
+function formatter(num) {
+    return Math.abs(num) > 999 ? `${Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1))}k`
+        : Math.sign(num) * Math.abs(num);
 }
 
 function renderValueSize() {
@@ -17,26 +17,25 @@ function renderValueSize() {
 
 export default class ChartColumns extends React.Component {
     render() {
-
         const { values } = this.props;
-        let maxValue = Math.max.apply(Math, values.map(function(o) { return o.value; }));
+        const maxValue = Math.max(...values.map((o) => o.value));
 
         return (
-            <div className='chart__columns'>
-                {values.map((item, index) => {
-                    return (
-                        <div key={index}
-                            className={`column__item ${item.active === true ? 'active' : ''}`}
-                             style={{ width: `${100/values.length + '%'}`}}
-                        >
-                            <div className='column__item-value'>{item.value > 0 ? item.value : ''}</div>
-                            <div className="column__item-part"
-                                 style={{ height: `${item.value*renderValueSize()/maxValue + 'vh'}`}}
-                            />
-                            <div className='column__item-name'>{item.title}</div>
-                        </div>
-                    );
-                })}
+            <div className="chart__columns">
+                {values.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`column__item ${item.active === true ? 'active' : ''}`}
+                        style={{ width: `${`${100 / values.length}%`}` }}
+                    >
+                        <div className="column__item-value">{item.value > 0 ? formatter(item.value) : ''}</div>
+                        <div
+                            className="column__item-part"
+                            style={{ height: `${`${item.value * renderValueSize() / maxValue}vh`}` }}
+                        />
+                        <div className="column__item-name">{item.title}</div>
+                    </div>
+                ))}
             </div>
         );
     }

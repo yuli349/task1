@@ -1,3 +1,5 @@
+@import '../../sass/constants.scss';
+
 .leaders,
 .theme_dark .leaders {
   display: flex;
@@ -5,11 +7,6 @@
   flex-direction: column;
   height: 100%;
   overflow: hidden;
-
-  .name {
-    line-height: 4.8vh;
-    font-size: 4.2vh;
-  }
 
   .header__title {
     font-size: 8.1vh;
@@ -36,9 +33,8 @@
 
     .header__subtitle {
       margin-bottom: 0;
-      line-height: 2.6vh;
-      letter-spacing: 0;
-      font-size: 2.4vh;
+      line-height: $line-height-port-16;
+      font-size: $font-size-port-16;
     }
 
     .header__title {
@@ -47,8 +43,6 @@
 
     .name {
       line-height: 2.8vh;
-      letter-spacing: 0;
-      font-size: 2.4vh;
     }
 
     &__container {

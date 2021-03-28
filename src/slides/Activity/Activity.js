@@ -1,14 +1,9 @@
 import React from 'react';
+
 import './Activity.scss';
 import Header from '../../components/header/Header';
 import ActivityMap from '../../components/activityMap/ActivityMap';
-
-function getOrientation() {
-    if (window.innerWidth < window.innerHeight) {
-        return 'portrait';
-    }
-    return 'landscape';
-}
+import getOrientation from '../../helpers/orientation';
 
 function renderDimensionText() {
     if (getOrientation() === 'portrait') {

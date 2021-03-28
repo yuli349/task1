@@ -1,10 +1,11 @@
+@import '../../sass/constants.scss';
+
 .vote,
 .theme_dark .vote {
   height: 100%;
   overflow: hidden;
 
-  .name, .theme_dark .name {
-    line-height: 4.8vh;
+  .name {
     font-size: 4.3vh;
   }
 
@@ -13,7 +14,6 @@
   }
 
   .header__title {
-    line-height: 8.6vh;
     font-size: 7.9vh;
   }
 
@@ -33,6 +33,10 @@
   }
 
   &__slider.short {
+    .vote__slide {
+      align-items: center;
+    }
+
     .vote__slide-item:nth-child(1),
     .vote__slide-item:nth-child(4) {
       top: 0;
@@ -60,6 +64,7 @@
       background-color: transparent;
       border-color: transparent;
       outline: none;
+      cursor: pointer;
 
       &:hover,
       &:active,
@@ -118,6 +123,8 @@
     button {
       background-image: url("../../assets/images/button-hover-light.svg");
 
+      &:hover,
+      &:active,
       &:disabled {
         background-image: url("../../assets/images/button-light.svg");
       }
@@ -143,24 +150,13 @@
       padding: 3.4vh 5.3vw 0.1vh;
     }
 
-    .name {
-      line-height: 2.7vh;
-      letter-spacing: 0;
-      font-size: 2.4vh;
-    }
-
-    .header__title,
+    .name,
     .header__subtitle {
-      letter-spacing: 0;
+      font-size: $font-size-port-16;
     }
 
     .header__title {
       font-size: 4.5vh;
-      line-height: 4.8vh;
-    }
-
-    .header__subtitle {
-      font-size: 2.4vh;
     }
 
     &__slider.short {

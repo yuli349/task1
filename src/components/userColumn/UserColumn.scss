@@ -35,7 +35,7 @@
   &__user-value {
     padding: 1.5vh 0 4vh;
     font-size: 3.6vh;
-    color: #918F8A;
+    color: $primary2;
   }
 
   &__block {
@@ -55,10 +55,6 @@
   &:nth-child(5) {
     margin-left: -2.4vw;
     padding-left: 2.4vw;
-
-    //.column__block {
-    //  box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset -5px 2px 16px rgba(103, 103, 103, 0.6);
-    //}
   }
 
   &:nth-child(1) .name {
@@ -95,10 +91,6 @@
   &:nth-child(2) {
     margin-right: -2.4vw;
     padding-right: 2.4vw;
-
-    //.column__block {
-    //  box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.15), inset 9px 2px 16px rgba(103, 103, 103, 0.6);
-    //}
   }
 
   &:nth-child(1) &__block,
@@ -159,6 +151,8 @@
 
     &:nth-child(2) {
       padding-top: 15vh;
+      margin-right: -4.3vw;
+      padding-right: 4.3vw;
     }
 
     &:nth-child(3) .name {
@@ -179,11 +173,6 @@
     &:nth-child(1),
     &:nth-child(5) {
       display: none;
-    }
-
-    &:nth-child(2) {
-      margin-right: -4.3vw;
-      padding-right: 4.3vw;
     }
 
     &:nth-child(4) {

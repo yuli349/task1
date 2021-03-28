@@ -3,13 +3,7 @@ import React from 'react';
 import './Vote.scss';
 import VoteSlide from '../../components/voteSlide/VoteSlide';
 import Header from '../../components/header/Header';
-
-function getOrientation() {
-    if (window.innerWidth < window.innerHeight) {
-        return 'portrait';
-    }
-    return 'landscape';
-}
+import getOrientation from '../../helpers/orientation';
 
 export default class Vote extends React.Component {
     constructor(props) {

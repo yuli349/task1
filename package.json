@@ -24,8 +24,34 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb"
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        4
+      ],
+      "max-len": [
+        "error",
+        130
+      ],
+      "prefer-destructuring": "off",
+      "no-param-reassign": "off",
+      "no-restricted-syntax": "off",
+      "no-mixed-operators": "off",
+      "consistent-return": "off",
+      "react/jsx-filename-extension": "off",
+      "react/prefer-stateless-function": "off",
+      "react/prop-types": "off",
+      "react/jsx-indent": "off",
+      "react/jsx-indent-props": "off",
+      "react/destructuring-assignment": "off",
+      "react/no-array-index-key": "off",
+      "react/sort-comp": "off",
+      "class-methods-use-this": "off",
+      "jsx-a11y/control-has-associated-label": "off"
+    }
   },
   "browserslist": {
     "production": [

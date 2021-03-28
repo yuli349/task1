@@ -1,5 +1,6 @@
-import './UserName.scss';
 import React from 'react';
+
+import './UserName.scss';
 
 export default class UserName extends React.Component {
     render() {

@@ -1,5 +1,6 @@
-import './UserColumn.scss';
 import React from 'react';
+
+import './UserColumn.scss';
 import Avatar from '../avatar/Avatar';
 import UserName from '../userName/UserName';
 

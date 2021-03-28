@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Diagram.scss';
 import Header from '../../components/header/Header';
 import DiagramDonut from '../../components/diagramDonut/DiagramDonut';

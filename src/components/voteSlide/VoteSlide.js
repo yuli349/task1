@@ -1,5 +1,6 @@
-import './VoteSlide.scss';
 import React from 'react';
+
+import './VoteSlide.scss';
 import Avatar from '../avatar/Avatar';
 import UserName from '../userName/UserName';
 
@@ -17,6 +18,6 @@ export default class VoteSlide extends React.Component {
                     </div>
                 ))}
             </div>
-        )
+        );
     }
 }

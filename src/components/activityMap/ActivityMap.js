@@ -1,12 +1,7 @@
-import './ActivityMap.scss';
 import React from 'react';
 
-function getOrientation() {
-    if (window.innerWidth < window.innerHeight) {
-        return 'portrait';
-    }
-    return 'landscape';
-}
+import './ActivityMap.scss';
+import getOrientation from '../../helpers/orientation';
 
 function renderColumn(item) {
     switch (true) {

@@ -1,3 +1,5 @@
+@import '../../sass/constants.scss';
+
 .chart,
 .theme_dark .chart {
   height: 100%;
@@ -10,12 +12,9 @@
 
   .header__subtitle {
     font-size: 4.2vh;
-    letter-spacing: 0;
   }
 
   .header__title {
-    font-size: 8vh;
-    line-height: 8.6vh;
     position: relative;
     top: -0.2vh;
   }
@@ -67,7 +66,7 @@
   &__leaders-item-value {
     margin-left: 2vw;
     margin-top: 1.7vh;
-    color: #918F8A;
+    color: $primary2;
   }
 
   &__leaders-item .avatar .img {
@@ -99,14 +98,11 @@
     }
 
     .header__title {
-      font-size: 4.5vh;
-      line-height: 4.8vh;
       top: 0;
     }
 
     .header__subtitle {
-      letter-spacing: 0;
-      font-size: 2.4vh;
+      font-size: $font-size-port-16;
     }
 
     &__leaders {
@@ -143,13 +139,12 @@
       margin-left: 3.7vw;
       padding-right: 2vw;
       line-height: 4vh;
-      letter-spacing: 0;
-      font-size: 2.4vh;
+      font-size: $font-size-port-16;
       top: 0;
     }
 
     &__leaders-item:nth-child(2) .name {
-      font-size: 2.4vh;
+      font-size: $font-size-port-16;
     }
 
     &__leaders-item-value {
