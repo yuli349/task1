@@ -4,7 +4,6 @@
 
     ```
     git clone https://github.com/yuli349/task1.git
-    cd shri-2021-task-1-belitskaya
     ```
 2. Установить зависимости
 
