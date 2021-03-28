@@ -14,25 +14,24 @@ function getOrientation() {
 export default class Vote extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {chunks: this.getChunks()};
-        this.setChunks();
+        this.state = { chunks: this.getChunks() };
     }
+
     getChunks() {
         return getOrientation() === 'portrait' ? 8 : 6;
     }
+
     setChunks() {
         this.setState({
-            chunks: this.getChunks()
+            chunks: this.getChunks(),
         });
-
     }
+
     getUsersByOffset(offset = undefined) {
         const { users } = this.props.data;
         return offset !== undefined ? users.slice(offset) : users;
     }
-    componentDidMount() {
-        window.addEventListener('resize', this.setChunks.bind(this));
-    }
+
     render() {
         const { data } = this.props;
         const users = data.users;
@@ -45,16 +44,16 @@ export default class Vote extends React.Component {
 
         const dataParamsPrev = JSON.stringify({
             alias: 'vote',
-            data: Object.assign({}, data, {offset: prevOffset}),
+            data: { ...data, offset: prevOffset },
         });
         const dataParamsNext = JSON.stringify({
             alias: 'vote',
-            data: Object.assign({}, data, {offset: users.indexOf(usersByOffset[usersByOffset.length - 1]) + 1}),
+            data: { ...data, offset: users.indexOf(usersByOffset[usersByOffset.length - 1]) + 1 },
         });
 
         return (
             <div className="vote">
-                <Header title={data.title} subtitle={data.subtitle}/>
+                <Header title={data.title} subtitle={data.subtitle} />
 
                 <div className={`vote__slider ${usersByOffset.length < 5 ? 'short' : ''}`}>
                     <div className="vote__slider-item">
@@ -65,8 +64,19 @@ export default class Vote extends React.Component {
                         />
                     </div>
                     <div className="vote__slider-btns">
-                        <button data-action="update" data-params={dataParamsPrev} disabled={offset === 0} className="vote__slider-back-button"/>
-                        <button data-action="update" disabled={offset >= users.length - chunks} className="vote__slider-next-button" data-params={dataParamsNext}
+                        <button
+                            type="button"
+                            data-action="update"
+                            data-params={dataParamsPrev}
+                            disabled={offset === 0}
+                            className="vote__slider-back-button"
+                        />
+                        <button
+                            type="button"
+                            data-action="update"
+                            disabled={offset >= users.length - chunks}
+                            className="vote__slider-next-button"
+                            data-params={dataParamsNext}
                         />
                     </div>
                 </div>

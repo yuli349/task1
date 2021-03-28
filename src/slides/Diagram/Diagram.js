@@ -6,17 +6,17 @@ import DiagramCategories from '../../components/diagramCategories/DiagramCategor
 
 export default class Diagram extends React.Component {
     getCategoriesValue() {
-        return this.props.data.categories.map(a => Number(a.valueText.split(' ')[0]));
+        return this.props.data.categories.map((a) => Number(a.valueText.split(' ')[0]));
     }
 
     render() {
         const { data } = this.props;
         return (
             <div className="diagram">
-                <Header title={data.title} subtitle={data.subtitle}/>
+                <Header title={data.title} subtitle={data.subtitle} />
                 <div className="diagram__container">
-                    <DiagramDonut data={data} values={this.getCategoriesValue()}/>
-                    <DiagramCategories categories={data.categories}/>
+                    <DiagramDonut data={data} values={this.getCategoriesValue()} />
+                    <DiagramCategories categories={data.categories} />
                 </div>
             </div>
         );
