@@ -37,12 +37,10 @@ export default class Vote extends React.Component {
         prevOffset = prevOffset > 0 ? prevOffset : 0;
 
         const dataParamsPrev = JSON.stringify({
-            alias: 'vote',
-            data: { ...data, offset: prevOffset },
+            data: { offset: prevOffset },
         });
         const dataParamsNext = JSON.stringify({
-            alias: 'vote',
-            data: { ...data, offset: users.indexOf(usersByOffset[usersByOffset.length - 1]) + 1 },
+            data: { offset: users.indexOf(usersByOffset[usersByOffset.length - 1]) + 1 },
         });
 
         return (

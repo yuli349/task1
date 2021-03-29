@@ -12,7 +12,7 @@ export default class VoteSlide extends React.Component {
                     <div
                         key={item.id}
                         data-action="update"
-                        data-params={JSON.stringify({ alias: 'vote', data: { ...this.props.data, selectedUserId: item.id } })}
+                        data-params={JSON.stringify({ data: { selectedUserId: item.id } })}
                         className={`vote__slide-item ${item.id === this.props.selectedUser ? 'vote__slide-selected' : ''}`}
                     >
                         <Avatar avatar={item.avatar} userEmoji={item.id === this.props.selectedUser ? '👍' : ''} />
